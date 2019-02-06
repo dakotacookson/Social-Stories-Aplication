@@ -21,6 +21,14 @@ const Storys = {
         StoryName.textContent = StoryObj.title;
         StoryPicture.textContent = StoryObj.picture;
         Story.textContent = StoryObj.Text;
+        const Back = document.createElement("button")
+        Back.setAttribute("Class" , "BackButton")
+        Back.textContent = "Back"
+        Back.addEventListener("click", () => {
+            window.location.reload()
+        })
+        StoryOutputSection.appendChild(Back);
+
 
         const StoryEditButton = document.createElement("button");
         StoryOutputSection.appendChild(StoryEditButton);

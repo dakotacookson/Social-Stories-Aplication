@@ -9,6 +9,7 @@ const StoryForm = {
     StoryFormBuilder() {
         const StoryArticle = document.querySelector(".Storyform");
         const StoryFormSection = document.createElement("section");
+        StoryFormSection.setAttribute("Class" ,  "stories")
         StoryArticle.appendChild(StoryFormSection);
         const StoryFormHeader = document.createElement("h3");
         StoryFormSection.appendChild(StoryFormHeader);

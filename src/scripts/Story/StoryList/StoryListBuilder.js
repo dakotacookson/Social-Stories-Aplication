@@ -9,8 +9,12 @@ const StorysList3 = {
         StoryArticle.appendChild(StoryOutputSection);
         StoryName2.textContent = StoryObj.title;
         StoryName2.addEventListener("click", () => {
-            StoryName2.textContent = " ";
+            let Storiescontainer = document.querySelector(".stories")
+            Storiescontainer.innerHTML = " "
+            let clearcontewnt = document.querySelector(".Story")
+clearcontewnt.innerHTML = " "
             Stories.StoryBuilder(StoryObj);
+
         })
     }
 }
