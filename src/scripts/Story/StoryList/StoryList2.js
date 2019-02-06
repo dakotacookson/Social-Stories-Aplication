@@ -8,12 +8,10 @@ const Storylist2 = {
                 const userId = sessionStorage.getItem("userId");
                 const currentUserId = JSON.parse(userId);
                 if (Story.userId === currentUserId) {
-                    StorysList3.StoryListBuilder(Story);
+                    StorysList3.StoryListBuilder5(Story);
                 }
             });
         })
     }
-
 }
-
 export default Storylist2
