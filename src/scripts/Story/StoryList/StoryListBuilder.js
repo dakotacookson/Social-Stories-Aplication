@@ -1,3 +1,4 @@
+import Stories from "../StoryBuilder"
 const StorysList3 = {
     StoryListBuilder(StoryObj) {
         const StoryArticle = document.querySelector(".Story2")
@@ -7,6 +8,10 @@ const StorysList3 = {
         StoryOutputSection.appendChild(StoryName2);
         StoryArticle.appendChild(StoryOutputSection);
         StoryName2.textContent = StoryObj.title;
+        StoryName2.addEventListener("click", () => {
+            console.log(StoryName2)
+            Stories.StoryBuilder(StoryObj);
+        })
     }
 }
 

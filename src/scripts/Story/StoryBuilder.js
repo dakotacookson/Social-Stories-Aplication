@@ -11,7 +11,7 @@ const Storys = {
         const Story = document.createElement("p");
 
         const StoryOutputSection = document.createElement("article");
-        StoryOutputSection.setAttribute("id", `${StoryObj.id}`)
+        StoryOutputSection.setAttribute("Id", `${StoryObj.id}`)
         StoryArticle.appendChild(StoryOutputSection);
 
         StoryOutputSection.appendChild(StoryName);
