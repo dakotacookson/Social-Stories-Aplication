@@ -12,6 +12,7 @@ const StoryForm = {
         StoryFormSection.setAttribute("Class" ,  "stories")
         StoryArticle.appendChild(StoryFormSection);
         const StoryFormHeader = document.createElement("h3");
+        StoryFormHeader.setAttribute("Class" , "StoryHeader")
         StoryFormSection.appendChild(StoryFormHeader);
         StoryFormHeader.textContent = "Story Name";
 

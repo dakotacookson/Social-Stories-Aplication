@@ -6,6 +6,7 @@ const userPasswordInput = document.createElement("input")
 const userEmailInput = document.createElement("input")
 
 const createNewUser = document.createElement("button")
+const backbutton = document.createElement("button")
 
 const registrationForm = {
 
@@ -27,15 +28,18 @@ const registrationForm = {
     userPasswordInput.placeholder = "Create Password"
     userEmailInput.placeholder = "Input Email Address"
     createNewUser.textContent = "Register User"
+    backbutton.textContent = "Back To Login"
 
 
     registerContainer.appendChild(userNameInput)
     registerContainer.appendChild(userPasswordInput)
     registerContainer.appendChild(userEmailInput)
     registerContainer.appendChild(createNewUser)
+    registerContainer.appendChild(backbutton)
 
 
     createNewUser.addEventListener("click", this.registerUser)
+    backbutton.addEventListener("click", this.GoBack)
     },
 
     registerUser () {
@@ -52,6 +56,10 @@ const registrationForm = {
         API.postNewData("users",newUserToSave)
 
         login.replaceWithLoginForm();
+    },
+    GoBack () {
+        login.replaceWithLoginForm();
+
     }
 }
   export default registrationForm

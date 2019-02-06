@@ -11,6 +11,7 @@ if (sessionStorage.userId === undefined) {
   registrationForm.createAndAppendRegistrationForm();
 }
 if (sessionStorage.userId >= 1) {
+
   logout.createAndAppendLogout();
   let currentUsername = sessionStorage.getItem("userName")
   let userheader = document.querySelector(".header2")

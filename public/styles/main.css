@@ -1,0 +1,178 @@
+
+
+body{
+    background-color: White
+}
+.header1{
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    text-align: center;
+    }
+    .header2{
+        position: relative;
+        animation-name: example;
+        animation-duration: 2s;
+        text-align: center;
+        }
+        .StoryHeader{
+            position: relative;
+            animation-name: example;
+            animation-duration: 2s;
+            text-align: center;
+        }
+        .output__logout{
+            position: relative;
+            animation-name: example;
+            animation-duration: 2s;
+            text-align: center;
+        }
+        .output__login{
+            position: relative;
+            animation-name: example;
+            animation-duration: 2s;
+            text-align: center;
+        }
+        .output__registration{
+            position: relative;
+            animation-name: example;
+            animation-duration: 2s;
+            text-align: center;
+        }
+        .Story{
+            position: relative;
+            animation-name: example;
+            animation-duration: 2s;
+            text-align: center;
+
+        }
+        .Arti1{
+            position: relative;
+            animation-name: example;
+            animation-duration: 2s;
+        }
+
+        .stories{
+            position: relative;
+            animation-name: example;
+            animation-duration: 2s;
+            text-align: center;
+            padding: 1%;
+        }
+
+
+        .Story2{
+            position: relative;
+            animation-name: example;
+            animation-duration: 2s;
+
+
+
+
+        }
+        button{
+            position: relative;
+            animation-name: example;
+            animation-duration: 2s;
+            border-radius: 25px;
+            box-shadow: .05em .05em .1em .1em #00000059;
+        }
+        button:hover{
+            position: relative;
+            animation-name: example;
+            animation-duration: 2s;
+            border-radius: 25px;
+            box-shadow: .02em .02em .08em .08em #00000098;
+
+        }
+
+        input{
+            position: relative;
+            animation-name: example;
+            animation-duration: 2s;
+            border-radius: 25px;
+            box-shadow: .05em .05em .1em .1em #0000000c;
+            background-color: White
+        }
+
+        input:hover{
+            position: relative;
+            animation-name: example;
+            animation-duration: 2s;
+            border-radius: 25px;
+            box-shadow: .02em .02em .08em .08em #0000003a;
+    background-color: White
+        }
+        h2{  position: relative;
+            animation-name: example;
+            animation-duration: 2s;
+        }
+
+        h2:hover{  position: relative;
+            animation-name: example;
+            animation-duration: 2s;
+            background-color: White
+
+        }
+
+        .Story2{  position: relative;
+            animation-name: example;
+            animation-duration: 2s;
+            background-color: White
+        }
+        p{  position: relative;
+            animation-name: example;
+            animation-duration: 2s;
+            background-color: White;
+            text-align: center;
+        }
+        p:hover{  position: relative;
+            animation-name: example;
+            animation-duration: 2s;
+            background-color: White
+
+        }
+
+        h1{  position: relative;
+            animation-name: example;
+            animation-duration: 2s;
+            background-color: White
+
+        }
+
+        h1:hover{  position: relative;
+            animation-name: example;
+            animation-duration: 2s;
+            background-color: White
+        }
+
+        @keyframes example {
+            0% { Right:1000px; top:0px;}
+            100%   { Right:0px; top:0px;}
+                  }
+
+                  @keyframes example2 {
+                    0% { left:0; top:10000px;}
+                    100%   { left:0px; top:0px;}
+                          }
+
+                  .Input1{
+                    text-align: center;
+
+                  }
+
+                  .Input2{
+                    text-align: center;
+
+                  }
+
+                  .Input3{
+                    text-align: center;
+
+                  }
+
+                  .Story4{
+                      display: flex;
+                      justify-content: space-evenly;
+text-align: center
+}

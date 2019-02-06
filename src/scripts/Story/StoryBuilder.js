@@ -9,9 +9,9 @@ const Storys = {
         const VAR = StoryObj.picture;
         StoryPicture.setAttribute(`src` , `${VAR}`)
         const Story = document.createElement("p");
-
         const StoryOutputSection = document.createElement("article");
         StoryOutputSection.setAttribute("Id", `${StoryObj.id}`)
+        StoryOutputSection.setAttribute("Class", `Arti1`)
         StoryArticle.appendChild(StoryOutputSection);
 
         StoryOutputSection.appendChild(StoryName);
@@ -33,6 +33,7 @@ const Storys = {
         const StoryEditButton = document.createElement("button");
         StoryOutputSection.appendChild(StoryEditButton);
         StoryEditButton.textContent = "Edit";
+        StoryEditButton.setAttribute("Class" , "EditButton")
         StoryEditButton.addEventListener("click", () => {
           let articleId = event.target.parentNode.id;
           let StoryId = StoryObj.id
@@ -44,6 +45,7 @@ const Storys = {
         const StoryDeleteButton = document.createElement("button");
         StoryOutputSection.appendChild(StoryDeleteButton);
         StoryDeleteButton.textContent = "Delete";
+        StoryDeleteButton.setAttribute("Class" , "DeleteButton")
         StoryDeleteButton.addEventListener("click", () => {
             let StoryId2 = StoryObj.id
             API.deleteData(StoryId2)

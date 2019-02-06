@@ -11,8 +11,9 @@ searchtable.setAttribute("Id", "Searchbar")
 searchtable.placeholder = "Searchable";
 let searchtable2 = document.createElement("button")
 searchtable2.textContent = "Search"
-storycontainer3.appendChild(searchtable)
-storycontainer3.appendChild(searchtable2)
+searchtable2.setAttribute("Class" , "SearchButton")
+storycontainer3.append(searchtable)
+storycontainer3.append(searchtable2)
 searchtable2.addEventListener("click", () => {
   storycontainer.innerHTML = " "
   let searchbutton3 = document.getElementById("Searchbar").value
