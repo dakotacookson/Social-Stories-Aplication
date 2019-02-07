@@ -8,12 +8,14 @@ registrationPage.style.display = "none";
 const login = {
 
     createAndAppendLoginInput() {
-
+        const LoginHeader = document.createElement("h3")
+        LoginHeader.textContent="Log In User"
         const outEl = document.querySelector(".output__login");
         userNameInput.type = "text";
         userNameInput.placeholder = "username";
         passwordInput.type = "password";
         passwordInput.placeholder = "password";
+        outEl.appendChild(LoginHeader)
         outEl.appendChild(userNameInput);
         outEl.appendChild(passwordInput);
 
