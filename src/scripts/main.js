@@ -9,6 +9,8 @@ import serchbar from "./Story/StoryList/searchbar1"
 if (sessionStorage.userId === undefined) {
   login.createAndAppendLoginInput();
   registrationForm.createAndAppendRegistrationForm();
+  const story4u = document.querySelector(".Story4")
+  story4u.style.display = "none";
 }
 if (sessionStorage.userId >= 1) {
 

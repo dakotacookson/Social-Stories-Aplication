@@ -9,10 +9,10 @@ const StoryForm = {
     StoryFormBuilder() {
         const StoryArticle = document.querySelector(".Storyform");
         const StoryFormSection = document.createElement("section");
-        StoryFormSection.setAttribute("Class" ,  "stories")
+        StoryFormSection.setAttribute("Class", "stories")
         StoryArticle.appendChild(StoryFormSection);
         const StoryFormHeader = document.createElement("h3");
-        StoryFormHeader.setAttribute("Class" , "StoryHeader")
+        StoryFormHeader.setAttribute("Class", "StoryHeader")
         StoryFormSection.appendChild(StoryFormHeader);
         StoryFormHeader.textContent = "Story Name";
 
@@ -46,11 +46,11 @@ const StoryForm = {
 
         console.log(newStory);
 
-        API.postNewData("Stories",newStory)
-        .then(response => {
-            StoryList.listStory();
-window.location.reload()
-        })
+        API.postNewData("Stories", newStory)
+            .then(response => {
+                StoryList.listStory();
+                window.location.reload()
+            })
 
     }
 }

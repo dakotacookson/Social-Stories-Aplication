@@ -3,7 +3,7 @@ const StorysList3 = {
     StoryListBuilder5(StoryObj) {
         const StoryArticle = document.querySelector(".Story2")
         const StoryName2 = document.createElement("h2");
-        StoryName2.setAttribute("Class" , `${StoryObj.id}`)
+        StoryName2.setAttribute("Class", `${StoryObj.id}`)
         const StoryOutputSection = document.createElement("article");
         StoryOutputSection.appendChild(StoryName2);
         StoryArticle.appendChild(StoryOutputSection);

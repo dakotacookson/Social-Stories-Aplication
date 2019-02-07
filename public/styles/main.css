@@ -1,192 +1,209 @@
-
 body{
-
-background: linear-gradient(270deg, #b3b3b380, #f1f1f163);
-background-size: 200% 200%;
-
-animation: AnimationName 10s ease infinite;
-
+    background: linear-gradient(270deg, #b3b3b380, #f1f1f163);
+    background-size: 200% 200%;
+    animation: AnimationName 10s ease infinite;
 }
 @keyframes AnimationName {
-   0%{background-position:0% 50%}
-   50%{background-position:100% 50%}
-   100%{background-position:0% 50%}
+    0%{
+       background-position:0% 50%
+   }
+    50%{
+       background-position:100% 50%
+   }
+    100%{
+       background-position:0% 50%
+   }
+}
+button{
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    border-radius: .5em;
+    box-shadow: .05em .05em .1em .1em #00000059;
+    background-color: #ffa0c34f;
+    font-size: 1.2em 
+}
+button:hover{
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    border-radius: .5em;
+    box-shadow: .02em .02em .08em .08em #00000098;
+    background-color: #ff005d4f;
 }
 .header1{
     position: relative;
     animation-name: example;
     animation-duration: 2s;
     text-align: center;
-    background-color: rgba(75, 104, 88, 0.555);
-}
-    .header2{
-        box-shadow: .05em .05em .1em .1em #00000059;
-        background-color: rgba(75, 104, 88, 0.555);
-        position: relative;
-        animation-name: example;
-        animation-duration: 2s;
-        text-align: center;
-
-        }
-        .StoryHeader{
-            position: relative;
-            animation-name: example;
-            animation-duration: 2s;
-            text-align: center;
-        }
-        .output__logout{
-            position: relative;
-            animation-name: example;
-            animation-duration: 2s;
-            text-align: center;
-            padding: 1%;
-        }
-        .output__login{
-            position: relative;
-            animation-name: example;
-            animation-duration: 2s;
-            text-align: center;
-        }
-        .output__registration{
-            position: relative;
-            animation-name: example;
-            animation-duration: 2s;
-            text-align: center;
-        }
-        .Story{
-            position: relative;
-            animation-name: example;
-            animation-duration: 2s;
-            word-wrap: break-word;
-                width: 35%;
-                text-align: center;
-        }
-        .Arti1{
-            position: relative;
-            animation-name: example;
-            animation-duration: 2s;
-            word-wrap: break-word;
-            width: 100%;
-            text-align: center;
-            padding: 7%;
-}
-
-        .stories{
-            position: relative;
-            animation-name: example;
-            animation-duration: 2s;
-            text-align: center;
-            padding: 1%;
-            box-shadow: .05em .05em .1em .1em #00000059;
-        }
-        button{
-            position: relative;
-            animation-name: example;
-            animation-duration: 2s;
-            border-radius: 25px;
-            box-shadow: .05em .05em .1em .1em #00000059;
-            background-color: rgba(104, 102, 75, 0.555);
-
-        }
-        button:hover{
-            position: relative;
-            animation-name: example;
-            animation-duration: 2s;
-            border-radius: 25px;
-            box-shadow: .02em .02em .08em .08em #00000098;
-            background-color: rgba(75, 104, 88, 0.555);
-        }
-        input{
-            position: relative;
-            animation-name: example;
-            animation-duration: 2s;
-            border-radius: 25px;
-            box-shadow: .05em .05em .1em .1em #0000000c;
-            background-color: rgba(104, 102, 75, 0.555);
-        }
-        input:hover{
-            position: relative;
-            animation-name: example;
-            animation-duration: 2s;
-            border-radius: 25px;
-            box-shadow: .02em .02em .08em .08em #0000003a;
-            background-color: rgba(75, 104, 88, 0.555);
-        }
-        h2{  position: relative;
-            animation-name: example;
-            animation-duration: 2s;
-            box-shadow: .05em .05em .1em .1em #00000059;
-            background-color: rgba(75, 104, 88, 0.555);
-        }
-        h2:hover{  position: relative;
-            animation-name: example;
-            animation-duration: 2s;
-            box-shadow: .1em .1em .2em .2em #00000059;
-            background-color: rgba(104, 102, 75, 0.555);
-
-        }
-        .Story2{  position: relative;
-            animation-name: example;
-            animation-duration: 2s;
-        }
-        .Story3{  position: relative;
-            animation-name: example;
-            animation-duration: 2s;
-        width: 50%;
-        }
-        p{  position: relative;
-            animation-name: example;
-            animation-duration: 2s;
-            text-align: center;
-            background-color: rgba(75, 104, 88, 0.555);
-        }
-        p:hover{  position: relative;
-            animation-name: example;
-            animation-duration: 2s;
-
-        }
-        h1{  position: relative;
-            animation-name: example;
-            animation-duration: 2s;
-
-        }
-        h1:hover{  position: relative;
-            animation-name: example;
-            animation-duration: 2s;
-        }
-        @keyframes example {
-            0% { Right:1000px; top:0px;}
-            100%   { Right:0px; top:0px;}
-                  }
-
-                  @keyframes example2 {
-                    0% { left:0; top:10000px;}
-                    100%   { left:0px; top:0px;}
-                          }
-
-                  .Input1{
-                    text-align: center;
-
-                  }
-
-                  .Input2{
-                    text-align: center;
-
-                  }
-
-                  .Input3{
-                    text-align: center;
-
-                  }
-
-                  .Story4{
-                      display: flex;
-                      justify-content: flex-start;
-                      text-align: center;
-}
-
-img{
-    width: 75%;
+    background-color: rgba(195, 255, 160, 0.151);
     box-shadow: .05em .05em .1em .1em #00000059;
-
+}
+.header2{
+    box-shadow: .05em .05em .1em .1em #00000059;
+    background-color: rgba(195, 255, 160, 0.151);
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    text-align: center;
+}
+.StoryHeader{
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    text-align: center;
+}
+.output__logout{
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    text-align: center;
+    padding: 1%;
+}
+.output__login{
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    text-align: center;
+}
+.output__registration{
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    text-align: center;
+}
+.Story{
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    word-wrap: break-word;
+    text-align: center;
+}
+.Arti1{
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    word-wrap: break-word;
+    text-align: center;
+    padding: 10%;
+    box-shadow: .05em .05em .1em .1em #00000059;
+    background-color: rgba(195, 255, 160, 0.151) 
+}
+.stories{
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    text-align: center;
+    padding: 1%;
+    background-color: rgba(195, 255, 160, 0.151);
+    box-shadow: .05em .05em .1em .1em #00000059;
+    padding: 2% 
+}
+input{
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    border-radius: 25px;
+    box-shadow: .05em .05em .1em .1em #0000000c;
+    background-color: #ffa0c34f;
+    font-size: 1.3em;
+}
+input:hover{
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    border-radius: 25px;
+    box-shadow: .02em .02em .08em .08em #0000003a;
+    background-color: #ff005d4f;
+}
+h2{
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    box-shadow: .05em .05em .1em .1em #00000059;
+    background-color: #ffa0c34f 
+}
+h2:hover{
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    box-shadow: .1em .1em .2em .2em #00000059;
+    background-color: #ff005d4f;
+}
+.Story2{
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    background-color: rgba(195, 255, 160, 0.151) 
+}
+.Story3{
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    padding: 2%;
+    box-shadow: .05em .05em .1em .1em #00000059;
+    background-color: rgba(195, 255, 160, 0.151);
+}
+p{
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    text-align: center;
+    background-color: #ffa0c34f;
+    font-size: 2em;
+    padding: 1em;
+    box-shadow: .1em .1em .2em .2em #00000059;
+}
+p:hover{
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    padding: 1em;
+    box-shadow: .1em .1em .2em .2em #00000059;
+}
+h1{
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+}
+h1:hover{
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+}
+@keyframes example {
+    0% {
+        Right:4000px;
+        top:0px;
+   }
+    100% {
+        Right:0px;
+        top:0px;
+   }
+}
+.Input1{
+    text-align: center;
+}
+.Input2{
+    text-align: center;
+}
+.Input3{
+    text-align: center;
+}
+.Story4{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: .05em .05em .1em .1em #00000059;
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+}
+img{
+    width: 25%;
+    height: 25%;
+    padding: 1em;
+}
+.logout{
+    width: 100% 
 }

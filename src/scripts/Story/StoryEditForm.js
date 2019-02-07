@@ -2,7 +2,7 @@ import API from "../api"
 import Storylist from "./StoryList"
 
 const StoryEditForm = {
-  createAndAppendForm (StoryObj, articleId) {
+  createAndAppendForm(StoryObj, articleId) {
     let StoryNameField = document.createElement("p")
     let StoryStorysField = document.createElement("p")
     let StoryPicturesField = document.createElement("p")
@@ -10,7 +10,7 @@ const StoryEditForm = {
     let StoryNameLabel = document.createElement("label")
     StoryNameLabel.textContent = "Title"
     let StoryNameInput = document.createElement("input")
-    StoryNameInput.setAttribute("Class" , "Input1")
+    StoryNameInput.setAttribute("Class", "Input1")
     StoryNameInput.value = StoryObj.title
 
     StoryNameField.appendChild(StoryNameLabel)
@@ -19,7 +19,7 @@ const StoryEditForm = {
     let StoryPictureLabel = document.createElement("label")
     StoryPictureLabel.textContent = "Picture"
     let StoryPictureInput = document.createElement("input")
-    StoryPictureInput.setAttribute("Class" , "Input3")
+    StoryPictureInput.setAttribute("Class", "Input3")
     StoryPictureInput.value = StoryObj.picture
 
     StoryPicturesField.appendChild(StoryPictureLabel)
@@ -29,7 +29,7 @@ const StoryEditForm = {
     let StoryStorysLabel = document.createElement("label")
     StoryStorysLabel.textContent = "Story"
     let StoryStorysInput = document.createElement("input")
-    StoryStorysInput.setAttribute("Class" , "Input2")
+    StoryStorysInput.setAttribute("Class", "Input2")
     StoryStorysInput.value = StoryObj.Text
 
     StoryStorysField.appendChild(StoryStorysLabel)
@@ -39,22 +39,22 @@ const StoryEditForm = {
     let updateButton = document.createElement("button")
     updateButton.textContent = "Update"
     updateButton.addEventListener("click", () => {
-    const userId = sessionStorage.getItem("userId");
-    const currentUserId = JSON.parse(userId);
+      const userId = sessionStorage.getItem("userId");
+      const currentUserId = JSON.parse(userId);
 
       let editedStory = {
         title: StoryNameInput.value,
         picture: StoryPictureInput.value,
         Text: StoryStorysInput.value,
         userId: currentUserId
-        }
+      }
 
       API.putExistingStory(articleId, editedStory)
-      .then(response => {
-        Storylist.listStory();
-        window.location.reload()
+        .then(response => {
+          Storylist.listStory();
+          window.location.reload()
 
-      })
+        })
 
     })
 

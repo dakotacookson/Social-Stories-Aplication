@@ -1,6 +1,5 @@
 import API from "./api"
 import login from "./login"
-// Declare variables to hold user input
 const userNameInput = document.createElement("input")
 const userPasswordInput = document.createElement("input")
 const userEmailInput = document.createElement("input")
@@ -10,39 +9,39 @@ const backbutton = document.createElement("button")
 
 const registrationForm = {
 
-    createAndAppendRegistrationForm () {
+    createAndAppendRegistrationForm() {
 
-    const registerContainer = document.querySelector(".output__registration")
-    const registerHeader = document.createElement("h3")
-    registerContainer.appendChild(registerHeader)
-    registerHeader.textContent="Register User"
-
-
-
-    userNameInput.type = "text"
-    userPasswordInput.type = "text"
-    userEmailInput.type = "text"
+        const registerContainer = document.querySelector(".output__registration")
+        const registerHeader = document.createElement("h3")
+        registerContainer.appendChild(registerHeader)
+        registerHeader.textContent = "Register User"
 
 
-    userNameInput.placeholder = "Input UserName"
-    userPasswordInput.placeholder = "Create Password"
-    userEmailInput.placeholder = "Input Email Address"
-    createNewUser.textContent = "Register User"
-    backbutton.textContent = "Back To Login"
+
+        userNameInput.type = "text"
+        userPasswordInput.type = "text"
+        userEmailInput.type = "text"
 
 
-    registerContainer.appendChild(userNameInput)
-    registerContainer.appendChild(userPasswordInput)
-    registerContainer.appendChild(userEmailInput)
-    registerContainer.appendChild(createNewUser)
-    registerContainer.appendChild(backbutton)
+        userNameInput.placeholder = "Input UserName"
+        userPasswordInput.placeholder = "Create Password"
+        userEmailInput.placeholder = "Input Email Address"
+        createNewUser.textContent = "Register User"
+        backbutton.textContent = "Back To Login"
 
 
-    createNewUser.addEventListener("click", this.registerUser)
-    backbutton.addEventListener("click", this.GoBack)
+        registerContainer.appendChild(userNameInput)
+        registerContainer.appendChild(userPasswordInput)
+        registerContainer.appendChild(userEmailInput)
+        registerContainer.appendChild(createNewUser)
+        registerContainer.appendChild(backbutton)
+
+
+        createNewUser.addEventListener("click", this.registerUser)
+        backbutton.addEventListener("click", this.GoBack)
     },
 
-    registerUser () {
+    registerUser() {
         const userNameValue = userNameInput.value;
         const userPasswordValue = userPasswordInput.value;
         const userEmailValue = userEmailInput.value;
@@ -51,15 +50,15 @@ const registrationForm = {
             userName: userNameValue,
             password: userPasswordValue,
             email: userEmailValue
-          }
+        }
 
-        API.postNewData("users",newUserToSave)
+        API.postNewData("users", newUserToSave)
 
         login.replaceWithLoginForm();
     },
-    GoBack () {
+    GoBack() {
         login.replaceWithLoginForm();
 
     }
 }
-  export default registrationForm
+export default registrationForm

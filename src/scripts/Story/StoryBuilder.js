@@ -7,7 +7,7 @@ const Storys = {
         const StoryName = document.createElement("h2");
         const StoryPicture = document.createElement("img");
         const VAR = StoryObj.picture;
-        StoryPicture.setAttribute(`src` , `${VAR}`)
+        StoryPicture.setAttribute(`src`, `${VAR}`)
         const Story = document.createElement("p");
         const StoryOutputSection = document.createElement("article");
         StoryOutputSection.setAttribute("Id", `${StoryObj.id}`)
@@ -22,7 +22,7 @@ const Storys = {
         StoryPicture.textContent = StoryObj.picture;
         Story.textContent = StoryObj.Text;
         const Back = document.createElement("button")
-        Back.setAttribute("Class" , "BackButton")
+        Back.setAttribute("Class", "BackButton")
         Back.textContent = "Back"
         Back.addEventListener("click", () => {
             window.location.reload()
@@ -33,19 +33,19 @@ const Storys = {
         const StoryEditButton = document.createElement("button");
         StoryOutputSection.appendChild(StoryEditButton);
         StoryEditButton.textContent = "Edit";
-        StoryEditButton.setAttribute("Class" , "EditButton")
+        StoryEditButton.setAttribute("Class", "EditButton")
         StoryEditButton.addEventListener("click", () => {
-          let articleId = event.target.parentNode.id;
-          let StoryId = StoryObj.id
-          API.getData(StoryId)
-          .then(response => {
-            StoryEditForm.createAndAppendForm(StoryObj, articleId)
-          })
+            let articleId = event.target.parentNode.id;
+            let StoryId = StoryObj.id
+            API.getData(StoryId)
+                .then(response => {
+                    StoryEditForm.createAndAppendForm(StoryObj, articleId)
+                })
         })
         const StoryDeleteButton = document.createElement("button");
         StoryOutputSection.appendChild(StoryDeleteButton);
         StoryDeleteButton.textContent = "Delete";
-        StoryDeleteButton.setAttribute("Class" , "DeleteButton")
+        StoryDeleteButton.setAttribute("Class", "DeleteButton")
         StoryDeleteButton.addEventListener("click", () => {
             let StoryId2 = StoryObj.id
             API.deleteData(StoryId2)
