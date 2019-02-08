@@ -1,4 +1,3 @@
-import Stories from "../StoryBuilder"
 const StorysList5 = {
     StoryListBuilder(StoryObj) {
         const StoryArticle = document.querySelector(".Story2")
@@ -12,7 +11,6 @@ const StorysList5 = {
         Storiescontainer.innerHTML = " "
         let clearcontewnt = document.querySelector(".Story")
         clearcontewnt.innerHTML = " "
-        Stories.StoryBuilder(StoryObj);
     }
 }
 

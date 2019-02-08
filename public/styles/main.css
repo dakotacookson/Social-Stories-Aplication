@@ -1,4 +1,8 @@
-body{
+html{
+    text-align: center;
+
+}
+    body{
     background: linear-gradient(270deg, #b3b3b380, #f1f1f163);
     background-size: 200% 200%;
     animation: AnimationName 10s ease infinite;
@@ -107,6 +111,8 @@ input{
     box-shadow: .05em .05em .1em .1em #0000000c;
     background-color: #ffa0c34f;
     font-size: 1.3em;
+    text-align: center;
+
 }
 input:hover{
     position: relative;
@@ -115,6 +121,8 @@ input:hover{
     border-radius: 25px;
     box-shadow: .02em .02em .08em .08em #0000003a;
     background-color: #ff005d4f;
+    text-align: center;
+
 }
 h2{
     position: relative;
@@ -203,7 +211,4 @@ img{
     width: 25%;
     height: 25%;
     padding: 1em;
-}
-.logout{
-    width: 100% 
 }

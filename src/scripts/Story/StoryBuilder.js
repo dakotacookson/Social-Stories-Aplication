@@ -1,8 +1,11 @@
 import API from "../api"
 import StoryList from "./Storylist"
 import StoryEditForm from "./StoryEditForm"
+// import Storylist2 from "./StoryList/StoryList2"
 const Storys = {
     StoryBuilder(StoryObj) {
+        // document.querySelector(".Title0").innerHTML = " "
+        // Storylist2.listStory2()
         const StoryArticle = document.querySelector(".Story")
         const StoryName = document.createElement("h2");
         const StoryPicture = document.createElement("img");
@@ -50,8 +53,11 @@ const Storys = {
             let StoryId2 = StoryObj.id
             API.deleteData(StoryId2)
                 .then(response => {
+                    const restart = document.querySelector(".Arti1")
+                    let titledelete = document.querySelector(`#Title--${StoryObj.id}`)
+                    titledelete.innerHTML = " "
+                    restart.innerHTML = " "
                     StoryList.listStory();
-                    window.location.reload()
                 })
         })
     }

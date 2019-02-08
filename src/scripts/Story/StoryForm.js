@@ -8,9 +8,8 @@ const Picturesinput = document.createElement("input");
 const StoryForm = {
     StoryFormBuilder() {
         const StoryArticle = document.querySelector(".Storyform");
-        const StoryFormSection = document.createElement("section");
-        StoryFormSection.setAttribute("Class", "stories")
-        StoryArticle.appendChild(StoryFormSection);
+        let StoryFormSection = document.querySelector(".stories")
+        StoryArticle.append(StoryFormSection);
         const StoryFormHeader = document.createElement("h3");
         StoryFormHeader.setAttribute("Class", "StoryHeader")
         StoryFormSection.appendChild(StoryFormHeader);
@@ -30,6 +29,7 @@ const StoryForm = {
         addStoryButton.addEventListener("click", this.addStoryToJSON);
     },
     addStoryToJSON() {
+
         console.log("Button Works");
         const StoryTitle = StoryFormStoryInput.value;
         const StoryStorys = StoryFormStorysInput.value;
@@ -49,7 +49,6 @@ const StoryForm = {
         API.postNewData("Stories", newStory)
             .then(response => {
                 StoryList.listStory();
-                window.location.reload()
             })
 
     }

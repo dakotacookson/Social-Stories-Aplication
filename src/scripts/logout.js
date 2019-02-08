@@ -1,3 +1,5 @@
+
+import login from "./login"
 const logout = {
 
   createAndAppendLogout() {
@@ -13,9 +15,9 @@ const logout = {
   },
 
   handleLogout() {
+    document.querySelector(".stories").innerHTML = " "
     sessionStorage.clear();
-    location.reload();
-
+    login.replaceWithLoginForm()
   }
 }
 
