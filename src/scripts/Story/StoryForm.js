@@ -1,5 +1,6 @@
 import API from "../api"
 import StoryList from "./StoryList"
+import Storylist2 from "./StoryList/StoryList2"
 
 const StoryFormStoryInput = document.createElement("input");
 const StoryFormStorysInput = document.createElement("input");
@@ -48,7 +49,10 @@ const StoryForm = {
 
         API.postNewData("Stories", newStory)
             .then(response => {
+                document.querySelector(".Story").innerHTML = " "
                 StoryList.listStory();
+                document.querySelector(".Story2").innerHTML = " "
+                Storylist2.listStory2();
             })
 
     }

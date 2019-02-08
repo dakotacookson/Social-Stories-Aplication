@@ -69,12 +69,16 @@ button:hover{
     animation-name: example;
     animation-duration: 2s;
     text-align: center;
+    background-color: rgba(195, 255, 160, 0.151);
+    box-shadow: .05em .05em .1em .1em #00000059;
 }
 .output__registration{
     position: relative;
     animation-name: example;
     animation-duration: 2s;
     text-align: center;
+    background-color: rgba(195, 255, 160, 0.151);
+    box-shadow: .05em .05em .1em .1em #00000059;
 }
 .Story{
     position: relative;

@@ -1,11 +1,9 @@
 import API from "../api"
 import StoryList from "./Storylist"
 import StoryEditForm from "./StoryEditForm"
-// import Storylist2 from "./StoryList/StoryList2"
+import StoryForm from "./StoryForm"
 const Storys = {
     StoryBuilder(StoryObj) {
-        // document.querySelector(".Title0").innerHTML = " "
-        // Storylist2.listStory2()
         const StoryArticle = document.querySelector(".Story")
         const StoryName = document.createElement("h2");
         const StoryPicture = document.createElement("img");
@@ -28,7 +26,10 @@ const Storys = {
         Back.setAttribute("Class", "BackButton")
         Back.textContent = "Back"
         Back.addEventListener("click", () => {
-            window.location.reload()
+            document.querySelector(".Arti1").style.display = "none";
+            document.querySelector(".Arti1").innerHTML = " "
+            StoryForm.StoryFormBuilder()
+
         })
         StoryOutputSection.appendChild(Back);
 
@@ -57,7 +58,10 @@ const Storys = {
                     let titledelete = document.querySelector(`#Title--${StoryObj.id}`)
                     titledelete.innerHTML = " "
                     restart.innerHTML = " "
+                    document.querySelector(".Arti1").style.display = "none";
+
                     StoryList.listStory();
+                    StoryForm.StoryFormBuilder()
                 })
         })
     }

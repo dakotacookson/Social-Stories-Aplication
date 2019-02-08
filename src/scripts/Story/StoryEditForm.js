@@ -1,6 +1,6 @@
 import API from "../api"
 import Storylist from "./StoryList"
-
+import Storylist2 from "./StoryList/StoryList2"
 const StoryEditForm = {
   createAndAppendForm(StoryObj, articleId) {
     let StoryNameField = document.createElement("p")
@@ -51,8 +51,11 @@ const StoryEditForm = {
 
       API.putExistingStory(articleId, editedStory)
         .then(response => {
+          document.querySelector(".Story").innerHTML = " "
           Storylist.listStory();
-          window.location.reload()
+          document.querySelector(".Story2").innerHTML = " "
+          Storylist2.listStory2();
+          document.querySelector(".Arti1").style.display = "none";
 
         })
 

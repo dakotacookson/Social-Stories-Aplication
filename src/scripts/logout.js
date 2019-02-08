@@ -16,6 +16,8 @@ const logout = {
 
   handleLogout() {
     document.querySelector(".stories").innerHTML = " "
+    document.querySelector(".stories").style.display = "none";
+
     sessionStorage.clear();
     login.replaceWithLoginForm()
   }

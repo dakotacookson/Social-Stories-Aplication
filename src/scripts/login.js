@@ -51,13 +51,14 @@ const login = {
                     function loadUserSpecificPage(userId) {
                         const Story4 = document.querySelector(".Story4")
                         const Story2 = document.querySelector(".Story2")
-                        const Story3 = document.querySelector(".stories")
+                        const Story3 = document.querySelector(".Story3")
                         const Header2 = document.querySelector(".header2")
                         const logout2 = document.querySelector(".output__logout")
                         const loginPage = document.querySelector(".output__login");
                         loginPage.style.display = "none";
-                        // loginPage.style.display = "none";
+                        document.querySelector(".stories").style.display = "block";
                         Story2.innerHTML = " "
+                        Story3.innerHTML = " "
                         Storylist2.listStory2()
                         serchbar.searchbar2()
                         Story4.style.display = "flex";
@@ -81,7 +82,6 @@ const login = {
         const loginPage = document.querySelector(".output__login");
         loginPage.style.display = "none";
         registrationPage.style.display = "block";
-        document.querySelector(".stories").innerHTML = " "
 
     },
     replaceWithLoginForm() {
@@ -99,8 +99,6 @@ document.querySelector(".stories").innerHTML = " "
 Story4.style.display = "none";
         Header2.style.display = "none";
         logout.style.display = "none";
-
-
     },
 
 }
