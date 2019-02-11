@@ -57,6 +57,12 @@ const StoryEditForm = {
 
     let updateButton = document.createElement("button")
     updateButton.textContent = "Update"
+    let StoryItemArticle = document.querySelector(".Story")
+
+    StoryItemArticle.appendChild(StoryNameField)
+    StoryItemArticle.appendChild(StoryPicturesField)
+    StoryItemArticle.appendChild(StoryStorysField)
+    StoryItemArticle.appendChild(updateButton)
     updateButton.addEventListener("click", () => {
       StoryForm.StoryFormBuilder()
       const userId = sessionStorage.getItem("userId");
@@ -70,25 +76,23 @@ const StoryEditForm = {
         Text: StoryStorysInput.value,
         userId: currentUserId
       }
-
-      API.putExistingStory(articleId, editedStory)
+      let name = document.querySelector(".Input1")
+      console.log(name.value)
+if (name.value == ""){
+alert("No Story!")
+} else { (name.value ==! "")
+  StoryEditForm.doitnow(articleId , editedStory , StoryObj)
+}
+    })},
+    doitnow(articleId, editedStory, StoryObj) {
+          API.putExistingStory(articleId, editedStory, StoryObj)
         .then(response => {
           document.querySelector(".Story").innerHTML = " "
           Storylist.listStory(StoryObj);
           document.querySelector(".Story2").innerHTML = " "
           Storylist2.listStory2();
           console.log(response)
+        })}
 
-        })
-
-    })
-
-    let StoryItemArticle = document.querySelector(".Story")
-
-    StoryItemArticle.appendChild(StoryNameField)
-    StoryItemArticle.appendChild(StoryPicturesField)
-    StoryItemArticle.appendChild(StoryStorysField)
-    StoryItemArticle.appendChild(updateButton)
-  }
-}
+      }
 export default StoryEditForm

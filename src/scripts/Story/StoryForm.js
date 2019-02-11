@@ -37,9 +37,15 @@ const StoryForm = {
         const addStoryButton = document.createElement("button");
         StoryFormSection.appendChild(addStoryButton);
         addStoryButton.textContent = "Add Story";
-        addStoryButton.addEventListener("click", this.addStoryToJSON);
-    },
-    addStoryToJSON() {
+        addStoryButton.addEventListener("click", () => {
+            let nameipnut = document.querySelector(".Storyinput")
+            if (nameipnut.value == ""){
+                alert("No Story!")
+                } else { (nameipnut.value ==! "")
+                StoryForm.addStoryToJSON()
+                }
+                    })},
+                    addStoryToJSON() {
         console.log("Button Works");
         const StoryTitle = StoryFormStoryInput.value;
         const StoryStorys = StoryFormStorysInput.value;

@@ -50,6 +50,8 @@ const Storys = {
         StoryEditButton.textContent = "Edit";
         StoryEditButton.setAttribute("Class", "EditButton")
         StoryEditButton.addEventListener("click", () => {
+            StoryEditButton.innerHTML = " "
+            StoryEditButton.style.display = "none";
             let articleId = event.target.parentNode.id;
             let StoryId = StoryObj.id
             API.getData3(StoryId)
