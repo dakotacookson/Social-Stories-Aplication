@@ -1,6 +1,5 @@
 import API from "../api"
-import StoryList from "./StoryList"
-import Storylist2 from "./StoryList/StoryList2"
+import Storylist2 from "./StoryList/listitorator"
 
 const StoryFormStoryInput = document.createElement("input");
 const StoryFormStorysInput = document.createElement("input");
@@ -19,24 +18,28 @@ const StoryForm = {
         StoryFormHeader.textContent = "Story Name";
         StoryFormSection.appendChild(StoryFormStoryInput);
         StoryFormStoryInput.placeholder = "Story Name";
+        StoryFormStoryInput.setAttribute("Class", "Storyinput")
         StoryFormSection.appendChild(StoryFormStorysInput);
         StoryFormStorysInput.placeholder = "Story";
+        StoryFormStorysInput.setAttribute("Class", "Storytext")
         StoryFormSection.appendChild(Picturesinput);
         Picturesinput.textContent = "Add Picture";
         Picturesinput.placeholder = "Picture URL";
+        Picturesinput.setAttribute("Class", "Picinput1")
         StoryFormSection.appendChild(Picturesinput2);
         Picturesinput2.textContent = "Add Picture";
         Picturesinput2.placeholder = "Picture URL";
+        Picturesinput2.setAttribute("Class", "Picinput2")
         StoryFormSection.appendChild(Picturesinput3);
         Picturesinput3.textContent = "Add Picture";
         Picturesinput3.placeholder = "Picture URL";
+        Picturesinput3.setAttribute("Class", "Picinput3")
         const addStoryButton = document.createElement("button");
         StoryFormSection.appendChild(addStoryButton);
         addStoryButton.textContent = "Add Story";
         addStoryButton.addEventListener("click", this.addStoryToJSON);
     },
     addStoryToJSON() {
-
         console.log("Button Works");
         const StoryTitle = StoryFormStoryInput.value;
         const StoryStorys = StoryFormStorysInput.value;
@@ -62,6 +65,11 @@ const StoryForm = {
                 document.querySelector(".Story2").innerHTML = " "
                 Storylist2.listStory2();
                 console.log(response)
+                document.querySelector(".Storyinput").value = " "
+                document.querySelector(".Storytext").value = " "
+                document.querySelector(".Picinput1").value = " "
+                document.querySelector(".Picinput2").value = " "
+                document.querySelector(".Picinput3").value = " "
             })
 
     }

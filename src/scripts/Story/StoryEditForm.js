@@ -1,6 +1,6 @@
 import API from "../api"
-import Storylist from "./StoryList"
-import Storylist2 from "./StoryList/StoryList2"
+import Storylist from "../itarator2"
+import Storylist2 from "./StoryList/listitorator"
 import StoryForm from "./StoryForm"
 const StoryEditForm = {
   createAndAppendForm(StoryObj, articleId) {
@@ -24,9 +24,11 @@ const StoryEditForm = {
     StoryPictureLabel2.textContent = " Picture"
     StoryPictureLabel3.textContent = " Picture"
     let StoryPictureInput = document.createElement("input")
+    StoryPictureInput.setAttribute("Class", "Input5")
     let StoryPictureInput2 = document.createElement("input")
+    StoryPictureInput2.setAttribute("Class", "Input4")
     let StoryPictureInput3 = document.createElement("input")
-    StoryPictureInput.setAttribute("Class", "Input3")
+    StoryPictureInput3.setAttribute("Class", "Input3")
     StoryPictureInput.value = StoryObj.picture
     StoryPictureInput2.value = StoryObj.picture2
     StoryPictureInput3.value = StoryObj.picture3
@@ -44,7 +46,7 @@ const StoryEditForm = {
 
 
     let StoryStorysLabel = document.createElement("label")
-    StoryStorysLabel.textContent = " Story"
+    StoryStorysLabel.textContent = "Story"
     let StoryStorysInput = document.createElement("input")
     StoryStorysInput.setAttribute("Class", "Input2")
     StoryStorysInput.value = StoryObj.Text

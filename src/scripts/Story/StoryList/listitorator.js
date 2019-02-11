@@ -1,5 +1,5 @@
 import API from "../../api"
-import StorysList3 from "./StoryListBuilder"
+import StorysList3 from "./listbuilder"
 const Storylist2 = {
     listStory2() {
         API.getData("Stories")

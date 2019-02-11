@@ -1,5 +1,5 @@
 import API from "../api"
-import StoryList from "./Storylist"
+import StoryList from "../itarator2"
 import StoryEditForm from "./StoryEditForm"
 import StoryForm from "./StoryForm"
 const Storys = {
@@ -72,7 +72,7 @@ const Storys = {
                     titledelete.innerHTML = " "
                     restart.innerHTML = " "
                     document.querySelector(".Arti1").style.display = "none";
-
+                    document.querySelector(".Story").innerHTML = " "
                     StoryList.listStory();
                     StoryForm.StoryFormBuilder(StoryObj)
                     console.log(response)
