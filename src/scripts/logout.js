@@ -15,6 +15,7 @@ const logout = {
   },
 
   handleLogout() {
+    document.querySelector(".header123").style.display = "none";
     document.querySelector(".stories").innerHTML = " "
     document.querySelector(".stories").style.display = "none";
 

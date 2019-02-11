@@ -7,8 +7,14 @@ const Storys = {
         const StoryArticle = document.querySelector(".Story")
         const StoryName = document.createElement("h2");
         const StoryPicture = document.createElement("img");
+        const StoryPicture2= document.createElement("img");
+        const StoryPicture3 = document.createElement("img");
         const VAR = StoryObj.picture;
+        const VAR2 = StoryObj.picture2;
+        const VAR3 = StoryObj.picture3;
         StoryPicture.setAttribute(`src`, `${VAR}`)
+        StoryPicture2.setAttribute(`src`, `${VAR2}`)
+        StoryPicture3.setAttribute(`src`, `${VAR3}`)
         const Story = document.createElement("p");
         const StoryOutputSection = document.createElement("article");
         StoryOutputSection.setAttribute("Id", `${StoryObj.id}`)
@@ -17,17 +23,22 @@ const Storys = {
 
         StoryOutputSection.appendChild(StoryName);
         StoryOutputSection.appendChild(StoryPicture);
+        StoryOutputSection.appendChild(StoryPicture2);
+        StoryOutputSection.appendChild(StoryPicture3);
         StoryOutputSection.appendChild(Story);
 
         StoryName.textContent = StoryObj.title;
         StoryPicture.textContent = StoryObj.picture;
+        StoryPicture2.textContent = StoryObj.picture2;
+        StoryPicture3.textContent = StoryObj.picture3;
         Story.textContent = StoryObj.Text;
+
         const Back = document.createElement("button")
         Back.setAttribute("Class", "BackButton")
         Back.textContent = "Back"
         Back.addEventListener("click", () => {
             document.querySelector(".Arti1").style.display = "none";
-            document.querySelector(".Arti1").innerHTML = " "
+            document.querySelector(".Story").innerHTML = " "
             StoryForm.StoryFormBuilder()
 
         })
@@ -41,7 +52,7 @@ const Storys = {
         StoryEditButton.addEventListener("click", () => {
             let articleId = event.target.parentNode.id;
             let StoryId = StoryObj.id
-            API.getData(StoryId)
+            API.getData3(StoryId)
                 .then(response => {
                     StoryEditForm.createAndAppendForm(StoryObj, articleId)
                 })

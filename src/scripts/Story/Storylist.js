@@ -9,7 +9,7 @@ const Storylist = {
                     const userId = sessionStorage.getItem("userId");
                     const currentUserId = JSON.parse(userId);
                     if (Story.userId === currentUserId) {
-                        Storys.StoryBuilder(StoryObj);
+                        Storys.StoryBuilder();
                     }
                 });
             })

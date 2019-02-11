@@ -1,36 +1,28 @@
-html{
-    text-align: center;
 
-}
     body{
-    background: linear-gradient(270deg, #b3b3b380, #f1f1f163);
-    background-size: 200% 200%;
-    animation: AnimationName 10s ease infinite;
+background-color: white;
+    text-align: center;
 }
-@keyframes AnimationName {
-    0%{
-       background-position:0% 50%
-   }
-    50%{
-       background-position:100% 50%
-   }
-    100%{
-       background-position:0% 50%
-   }
+
+#Totalsyle{
+    display: inline-block;
+    text-align: center;
+    width: 50%;
+
 }
 button{
     position: relative;
     animation-name: example;
-    animation-duration: 2s;
+    animation-duration: .5s;
     border-radius: .5em;
     box-shadow: .05em .05em .1em .1em #00000059;
     background-color: #ffa0c34f;
-    font-size: 1.2em 
+    font-size: 1.2em
 }
 button:hover{
     position: relative;
     animation-name: example;
-    animation-duration: 2s;
+    animation-duration: .5s;
     border-radius: .5em;
     box-shadow: .02em .02em .08em .08em #00000098;
     background-color: #ff005d4f;
@@ -38,36 +30,40 @@ button:hover{
 .header1{
     position: relative;
     animation-name: example;
-    animation-duration: 2s;
+    animation-duration: .5s;
     text-align: center;
     background-color: rgba(195, 255, 160, 0.151);
     box-shadow: .05em .05em .1em .1em #00000059;
 }
-.header2{
+
+.header123{
+    display: flex;
     box-shadow: .05em .05em .1em .1em #00000059;
     background-color: rgba(195, 255, 160, 0.151);
     position: relative;
     animation-name: example;
-    animation-duration: 2s;
+    animation-duration: .5s;
     text-align: center;
+    justify-content: center;
+    justify-items: center;
 }
 .StoryHeader{
     position: relative;
     animation-name: example;
-    animation-duration: 2s;
+    animation-duration: .5s;
     text-align: center;
 }
 .output__logout{
     position: relative;
     animation-name: example;
-    animation-duration: 2s;
+    animation-duration: .5s;
     text-align: center;
-    padding: 1%;
+    padding: 3%;
 }
 .output__login{
     position: relative;
     animation-name: example;
-    animation-duration: 2s;
+    animation-duration: .5s;
     text-align: center;
     background-color: rgba(195, 255, 160, 0.151);
     box-shadow: .05em .05em .1em .1em #00000059;
@@ -75,7 +71,7 @@ button:hover{
 .output__registration{
     position: relative;
     animation-name: example;
-    animation-duration: 2s;
+    animation-duration: .5s;
     text-align: center;
     background-color: rgba(195, 255, 160, 0.151);
     box-shadow: .05em .05em .1em .1em #00000059;
@@ -83,34 +79,35 @@ button:hover{
 .Story{
     position: relative;
     animation-name: example;
-    animation-duration: 2s;
-    word-wrap: break-word;
+    animation-duration: .5s;
+    word-wrap: inherit;
     text-align: center;
+    width: 80%;
 }
 .Arti1{
     position: relative;
     animation-name: example;
-    animation-duration: 2s;
+    animation-duration: .5s;
     word-wrap: break-word;
     text-align: center;
     padding: 10%;
     box-shadow: .05em .05em .1em .1em #00000059;
-    background-color: rgba(195, 255, 160, 0.151) 
+    background-color: rgba(195, 255, 160, 0.151)
 }
 .stories{
     position: relative;
     animation-name: example;
-    animation-duration: 2s;
+    animation-duration: .5s;
     text-align: center;
     padding: 1%;
     background-color: rgba(195, 255, 160, 0.151);
     box-shadow: .05em .05em .1em .1em #00000059;
-    padding: 2% 
+    padding: 2%
 }
 input{
     position: relative;
     animation-name: example;
-    animation-duration: 2s;
+    animation-duration: .5s;
     border-radius: 25px;
     box-shadow: .05em .05em .1em .1em #0000000c;
     background-color: #ffa0c34f;
@@ -121,7 +118,7 @@ input{
 input:hover{
     position: relative;
     animation-name: example;
-    animation-duration: 2s;
+    animation-duration: .5s;
     border-radius: 25px;
     box-shadow: .02em .02em .08em .08em #0000003a;
     background-color: #ff005d4f;
@@ -131,27 +128,27 @@ input:hover{
 h2{
     position: relative;
     animation-name: example;
-    animation-duration: 2s;
+    animation-duration: .5s;
     box-shadow: .05em .05em .1em .1em #00000059;
-    background-color: #ffa0c34f 
+    background-color: #ffa0c34f
 }
 h2:hover{
     position: relative;
     animation-name: example;
-    animation-duration: 2s;
+    animation-duration: .5s;
     box-shadow: .1em .1em .2em .2em #00000059;
     background-color: #ff005d4f;
 }
 .Story2{
     position: relative;
     animation-name: example;
-    animation-duration: 2s;
-    background-color: rgba(195, 255, 160, 0.151) 
+    animation-duration: .5s;
+    background-color: rgba(195, 255, 160, 0.151)
 }
 .Story3{
     position: relative;
     animation-name: example;
-    animation-duration: 2s;
+    animation-duration: .5s;
     padding: 2%;
     box-shadow: .05em .05em .1em .1em #00000059;
     background-color: rgba(195, 255, 160, 0.151);
@@ -159,7 +156,7 @@ h2:hover{
 p{
     position: relative;
     animation-name: example;
-    animation-duration: 2s;
+    animation-duration: .5s;
     text-align: center;
     background-color: #ffa0c34f;
     font-size: 2em;
@@ -169,19 +166,19 @@ p{
 p:hover{
     position: relative;
     animation-name: example;
-    animation-duration: 2s;
+    animation-duration: .5s;
     padding: 1em;
     box-shadow: .1em .1em .2em .2em #00000059;
 }
 h1{
     position: relative;
     animation-name: example;
-    animation-duration: 2s;
+    animation-duration: .5s;
 }
 h1:hover{
     position: relative;
     animation-name: example;
-    animation-duration: 2s;
+    animation-duration: .5s;
 }
 @keyframes example {
     0% {
@@ -209,7 +206,7 @@ h1:hover{
     box-shadow: .05em .05em .1em .1em #00000059;
     position: relative;
     animation-name: example;
-    animation-duration: 2s;
+    animation-duration: .5s;
 }
 img{
     width: 25%;

@@ -1,6 +1,7 @@
 import API from "../api"
 import Storylist from "./StoryList"
 import Storylist2 from "./StoryList/StoryList2"
+import StoryForm from "./StoryForm"
 const StoryEditForm = {
   createAndAppendForm(StoryObj, articleId) {
     let StoryNameField = document.createElement("p")
@@ -17,13 +18,25 @@ const StoryEditForm = {
     StoryNameField.appendChild(StoryNameInput)
 
     let StoryPictureLabel = document.createElement("label")
+    let StoryPictureLabel2 = document.createElement("label")
+    let StoryPictureLabel3 = document.createElement("label")
     StoryPictureLabel.textContent = "Picture"
+    StoryPictureLabel2.textContent = "Picture"
+    StoryPictureLabel3.textContent = "Picture"
     let StoryPictureInput = document.createElement("input")
+    let StoryPictureInput2 = document.createElement("input")
+    let StoryPictureInput3 = document.createElement("input")
     StoryPictureInput.setAttribute("Class", "Input3")
     StoryPictureInput.value = StoryObj.picture
+    StoryPictureInput2.value = StoryObj.picture2
+    StoryPictureInput3.value = StoryObj.picture3
 
     StoryPicturesField.appendChild(StoryPictureLabel)
     StoryPicturesField.appendChild(StoryPictureInput)
+    StoryPicturesField.appendChild(StoryPictureLabel2)
+    StoryPicturesField.appendChild(StoryPictureInput2)
+    StoryPicturesField.appendChild(StoryPictureLabel3)
+    StoryPicturesField.appendChild(StoryPictureInput3)
 
 
     let StoryStorysLabel = document.createElement("label")
@@ -39,12 +52,15 @@ const StoryEditForm = {
     let updateButton = document.createElement("button")
     updateButton.textContent = "Update"
     updateButton.addEventListener("click", () => {
+      StoryForm.StoryFormBuilder()
       const userId = sessionStorage.getItem("userId");
       const currentUserId = JSON.parse(userId);
 
       let editedStory = {
         title: StoryNameInput.value,
         picture: StoryPictureInput.value,
+        picture2: StoryPictureInput2.value,
+        picture3: StoryPictureInput3.value,
         Text: StoryStorysInput.value,
         userId: currentUserId
       }

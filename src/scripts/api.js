@@ -4,6 +4,10 @@ const API = {
         return fetch(`http://localhost:8088/${resource}`)
             .then(response => response.json())
     },
+    getData3(resource) {
+        return fetch(`http://localhost:8088/Stories/${resource}`)
+            .then(response => response.json())
+    },
     getData2(resource) {
         return fetch(`http://localhost:8088/Stories?title_like=${resource}`)
             .then(response => response.json())

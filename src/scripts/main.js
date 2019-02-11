@@ -4,6 +4,7 @@ import StoryForm from "./Story/StoryForm"
 import serchbar from "./Story/StoryList/searchbar1"
 import login from "./login"
 import registrationForm from "./register"
+
 if (sessionStorage.userId === undefined) {
   login.createAndAppendLoginInput();
   registrationForm.createAndAppendRegistrationForm();
@@ -18,6 +19,7 @@ if (sessionStorage.userId >= 1) {
   const logout2 = document.querySelector(".output__logout")
   const loginPage = document.querySelector(".output__login");
   loginPage.style.display = "none";
+  document.querySelector(".stories").style.display = "block";
   Story2.innerHTML = " "
   Story3.innerHTML = " "
   Storylist2.listStory2()
@@ -32,4 +34,5 @@ if (sessionStorage.userId >= 1) {
   logout2.innerHTML = " "
   logout.createAndAppendLogout();
   logout2.style.display = "block";
+  registrationForm.createAndAppendRegistrationForm()
 }
