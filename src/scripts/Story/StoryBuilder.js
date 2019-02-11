@@ -12,13 +12,13 @@ const Storys = {
         const VAR = StoryObj.picture;
         const VAR2 = StoryObj.picture2;
         const VAR3 = StoryObj.picture3;
-        StoryPicture.setAttribute(`src`, `${VAR}`)
-        StoryPicture2.setAttribute(`src`, `${VAR2}`)
-        StoryPicture3.setAttribute(`src`, `${VAR3}`)
+        StoryPicture.setAttribute("src", `${VAR}`)
+        StoryPicture2.setAttribute("src", `${VAR2}`)
+        StoryPicture3.setAttribute("src", `${VAR3}`)
         const Story = document.createElement("p");
         const StoryOutputSection = document.createElement("article");
         StoryOutputSection.setAttribute("Id", `${StoryObj.id}`)
-        StoryOutputSection.setAttribute("Class", `Arti1`)
+        StoryOutputSection.setAttribute("Class", "Arti1")
         StoryArticle.appendChild(StoryOutputSection);
 
         StoryOutputSection.appendChild(StoryName);
@@ -55,6 +55,8 @@ const Storys = {
             API.getData3(StoryId)
                 .then(response => {
                     StoryEditForm.createAndAppendForm(StoryObj, articleId)
+                    console.log(response)
+
                 })
         })
         const StoryDeleteButton = document.createElement("button");
@@ -72,7 +74,8 @@ const Storys = {
                     document.querySelector(".Arti1").style.display = "none";
 
                     StoryList.listStory();
-                    StoryForm.StoryFormBuilder()
+                    StoryForm.StoryFormBuilder(StoryObj)
+                    console.log(response)
                 })
         })
     }

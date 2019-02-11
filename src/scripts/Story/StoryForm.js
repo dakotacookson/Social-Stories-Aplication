@@ -59,9 +59,9 @@ const StoryForm = {
         API.postNewData("Stories", newStory)
             .then(response => {
                 document.querySelector(".Story").innerHTML = " "
-                StoryList.listStory();
                 document.querySelector(".Story2").innerHTML = " "
                 Storylist2.listStory2();
+                console.log(response)
             })
 
     }

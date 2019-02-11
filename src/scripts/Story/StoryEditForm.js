@@ -9,20 +9,20 @@ const StoryEditForm = {
     let StoryPicturesField = document.createElement("p")
 
     let StoryNameLabel = document.createElement("label")
-    StoryNameLabel.textContent = "Title"
+    StoryNameLabel.textContent = " Title"
     let StoryNameInput = document.createElement("input")
     StoryNameInput.setAttribute("Class", "Input1")
     StoryNameInput.value = StoryObj.title
 
-    StoryNameField.appendChild(StoryNameLabel)
     StoryNameField.appendChild(StoryNameInput)
+    StoryNameField.appendChild(StoryNameLabel)
 
     let StoryPictureLabel = document.createElement("label")
     let StoryPictureLabel2 = document.createElement("label")
     let StoryPictureLabel3 = document.createElement("label")
-    StoryPictureLabel.textContent = "Picture"
-    StoryPictureLabel2.textContent = "Picture"
-    StoryPictureLabel3.textContent = "Picture"
+    StoryPictureLabel.textContent = " Picture"
+    StoryPictureLabel2.textContent = " Picture"
+    StoryPictureLabel3.textContent = " Picture"
     let StoryPictureInput = document.createElement("input")
     let StoryPictureInput2 = document.createElement("input")
     let StoryPictureInput3 = document.createElement("input")
@@ -31,22 +31,26 @@ const StoryEditForm = {
     StoryPictureInput2.value = StoryObj.picture2
     StoryPictureInput3.value = StoryObj.picture3
 
-    StoryPicturesField.appendChild(StoryPictureLabel)
     StoryPicturesField.appendChild(StoryPictureInput)
-    StoryPicturesField.appendChild(StoryPictureLabel2)
+    StoryPicturesField.appendChild(StoryPictureLabel)
+
     StoryPicturesField.appendChild(StoryPictureInput2)
-    StoryPicturesField.appendChild(StoryPictureLabel3)
+    StoryPicturesField.appendChild(StoryPictureLabel2)
+
     StoryPicturesField.appendChild(StoryPictureInput3)
+    StoryPicturesField.appendChild(StoryPictureLabel3)
+
+
 
 
     let StoryStorysLabel = document.createElement("label")
-    StoryStorysLabel.textContent = "Story"
+    StoryStorysLabel.textContent = " Story"
     let StoryStorysInput = document.createElement("input")
     StoryStorysInput.setAttribute("Class", "Input2")
     StoryStorysInput.value = StoryObj.Text
 
-    StoryStorysField.appendChild(StoryStorysLabel)
     StoryStorysField.appendChild(StoryStorysInput)
+    StoryStorysField.appendChild(StoryStorysLabel)
 
 
     let updateButton = document.createElement("button")
@@ -68,16 +72,16 @@ const StoryEditForm = {
       API.putExistingStory(articleId, editedStory)
         .then(response => {
           document.querySelector(".Story").innerHTML = " "
-          Storylist.listStory();
+          Storylist.listStory(StoryObj);
           document.querySelector(".Story2").innerHTML = " "
           Storylist2.listStory2();
-          document.querySelector(".Arti1").style.display = "none";
+          console.log(response)
 
         })
 
     })
 
-    let StoryItemArticle = document.querySelector(`.Story`)
+    let StoryItemArticle = document.querySelector(".Story")
 
     StoryItemArticle.appendChild(StoryNameField)
     StoryItemArticle.appendChild(StoryPicturesField)

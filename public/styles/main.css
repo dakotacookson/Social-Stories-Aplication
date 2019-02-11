@@ -7,8 +7,14 @@ background-color: white;
 #Totalsyle{
     display: inline-block;
     text-align: center;
-    width: 50%;
+    width: 75%;
 
+}
+
+.logout{
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 button{
     position: relative;
@@ -43,9 +49,8 @@ button:hover{
     position: relative;
     animation-name: example;
     animation-duration: .5s;
-    text-align: center;
     justify-content: center;
-    justify-items: center;
+
 }
 .StoryHeader{
     position: relative;
@@ -54,11 +59,15 @@ button:hover{
     text-align: center;
 }
 .output__logout{
+    display: flex;
+
     position: relative;
     animation-name: example;
     animation-duration: .5s;
     text-align: center;
-    padding: 3%;
+    justify-content: center;
+
+    padding: 1%;
 }
 .output__login{
     position: relative;
@@ -82,7 +91,6 @@ button:hover{
     animation-duration: .5s;
     word-wrap: inherit;
     text-align: center;
-    width: 80%;
 }
 .Arti1{
     position: relative;
@@ -209,7 +217,8 @@ h1:hover{
     animation-duration: .5s;
 }
 img{
-    width: 25%;
-    height: 25%;
-    padding: 1em;
+    width: 33%;
+    height: 33%;
+    padding: 2em;
 }
+
