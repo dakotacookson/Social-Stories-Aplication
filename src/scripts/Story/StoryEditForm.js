@@ -64,7 +64,6 @@ const StoryEditForm = {
     StoryItemArticle.appendChild(StoryStorysField)
     StoryItemArticle.appendChild(updateButton)
     updateButton.addEventListener("click", () => {
-      StoryForm.StoryFormBuilder()
       const userId = sessionStorage.getItem("userId");
       const currentUserId = JSON.parse(userId);
 
@@ -78,7 +77,7 @@ const StoryEditForm = {
       }
       let name = document.querySelector(".Input1")
       console.log(name.value)
-      if (name.value.length == 0) {
+      if (name.value.length === 0) {
         alert("No Story!")
       } else {
         (name.value.length > 0)
@@ -87,6 +86,7 @@ const StoryEditForm = {
     })
   },
   doitnow(articleId, editedStory, StoryObj) {
+    StoryForm.StoryFormBuilder()
     API.putExistingStory(articleId, editedStory, StoryObj)
       .then(response => {
         document.querySelector(".Story").innerHTML = " "
