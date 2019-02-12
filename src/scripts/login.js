@@ -1,6 +1,7 @@
 import API from "./api"
 import userpage from "./specificpage"
 import MD5 from "./hash"
+import registrationForm from "./register"
 
 const userNameInput = document.createElement("input");
 const passwordInput = document.createElement("input");
@@ -37,7 +38,7 @@ const login = {
                 let usersProcessed = 1;
                 allUsers.forEach(user => {
 
-                     let passhash = MD5(password);
+                    let passhash = MD5(password + MD5(username));
                     if (username === user.userName && passhash === user.password) {
                         sessionStorage.setItem("userId", user.id)
                         let userId = sessionStorage.getItem("userId");
@@ -57,11 +58,12 @@ const login = {
 
     },
     replaceWithRegistrationForm() {
-        console.log("testing");
         const registrationPage = document.querySelector(".output__registration")
+        registrationPage.innerHTML = " "
+        registrationForm.createAndAppendRegistrationForm()
+        registrationPage.style.display = "block";
         const loginPage = document.querySelector(".output__login");
         loginPage.style.display = "none";
-        registrationPage.style.display = "block";
 
     },
     replaceWithLoginForm() {

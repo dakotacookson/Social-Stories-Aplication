@@ -7,7 +7,7 @@ const Storys = {
         const StoryArticle = document.querySelector(".Story")
         const StoryName = document.createElement("h2");
         const StoryPicture = document.createElement("img");
-        const StoryPicture2= document.createElement("img");
+        const StoryPicture2 = document.createElement("img");
         const StoryPicture3 = document.createElement("img");
         const VAR = StoryObj.picture;
         const VAR2 = StoryObj.picture2;
@@ -16,6 +16,7 @@ const Storys = {
         StoryPicture2.setAttribute("src", `${VAR2}`)
         StoryPicture3.setAttribute("src", `${VAR3}`)
         const Story = document.createElement("p");
+        Story.setAttribute("class" , "paragraph")
         const StoryOutputSection = document.createElement("article");
         StoryOutputSection.setAttribute("Id", `${StoryObj.id}`)
         StoryOutputSection.setAttribute("Class", "Arti1")

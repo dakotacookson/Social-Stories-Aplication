@@ -39,18 +39,20 @@ const StoryForm = {
         addStoryButton.textContent = "Add Story";
         addStoryButton.addEventListener("click", () => {
             let nameipnut = document.querySelector(".Storyinput")
-            if (nameipnut.value == ""){
+            if (nameipnut.value.length == 0) {
                 alert("No Story!")
-                } else { (nameipnut.value ==! "")
+            } else {
+                (nameipnut.value.length > 0)
                 StoryForm.addStoryToJSON()
-                }
-                    })},
-                    addStoryToJSON() {
+            }
+        })
+    },
+    addStoryToJSON() {
         console.log("Button Works");
         const StoryTitle = StoryFormStoryInput.value;
         const StoryStorys = StoryFormStorysInput.value;
         const Pictures2 = Picturesinput.value;
-        const Pictures3= Picturesinput2.value;
+        const Pictures3 = Picturesinput2.value;
         const Pictures = Picturesinput3.value;
         const currentUserId = sessionStorage.getItem("userId");
         const userId = JSON.parse(currentUserId);

@@ -44,10 +44,10 @@ const registrationForm = {
 
     registerUser() {
         const userNameValue = userNameInput.value;
-        const userPasswordValue = userPasswordInput.value;
+        const userPasswordValue = userPasswordInput.value ;
         const userEmailValue = userEmailInput.value;
 
-       let passhash =  MD5(userPasswordValue);
+       let passhash =  MD5(userPasswordValue + MD5(userNameValue));
 
         let newUserToSave = {
             userName: userNameValue,

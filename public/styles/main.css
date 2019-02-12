@@ -1,16 +1,21 @@
 
     body{
-background-color: white;
     text-align: center;
+    background-image: url("./images/background-board-grain-326270.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 900px;
+	background-attachment: fixed;
+			background-size:  cover;
 }
-
 #Totalsyle{
     display: inline-block;
     text-align: center;
     width: 75%;
+    box-shadow: .6em .6em .3em .3em #00000094;
 
 }
-
 .logout{
     display: flex;
     justify-content: center;
@@ -20,36 +25,49 @@ button{
     position: relative;
     animation-name: example;
     animation-duration: .5s;
-    border-radius: .5em;
+    border-radius: 3em;
     box-shadow: .05em .05em .1em .1em #00000059;
-    background-color: #ffa0c34f;
-    font-size: 1.2em
+    font-size: 1em;
+    background-image: url("./images/steel-499897_960_720.jpg");
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+			background-size:  cover;
+
 }
 button:hover{
     position: relative;
     animation-name: example;
     animation-duration: .5s;
-    border-radius: .5em;
+    border-radius: 3em;
     box-shadow: .02em .02em .08em .08em #00000098;
-    background-color: #ff005d4f;
+
 }
 .header1{
     position: relative;
     animation-name: example;
     animation-duration: .5s;
     text-align: center;
-    background-color: rgba(195, 255, 160, 0.151);
-    box-shadow: .05em .05em .1em .1em #00000059;
+    box-shadow: .05em .05em .1em .1em #000000a4;
+    background-image: url("./images/80af03f7de51587aa581d1042f5dfb96--plywood-birches.jpg");
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+			background-size:  cover;
 }
 
 .header123{
     display: flex;
     box-shadow: .05em .05em .1em .1em #00000059;
-    background-color: rgba(195, 255, 160, 0.151);
     position: relative;
     animation-name: example;
     animation-duration: .5s;
     justify-content: center;
+    background-image: url("./images/80af03f7de51587aa581d1042f5dfb96--plywood-birches.jpg");
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+			background-size:  cover;
 
 }
 .StoryHeader{
@@ -74,16 +92,24 @@ button:hover{
     animation-name: example;
     animation-duration: .5s;
     text-align: center;
-    background-color: rgba(195, 255, 160, 0.151);
     box-shadow: .05em .05em .1em .1em #00000059;
+    background-image: url("./images/80af03f7de51587aa581d1042f5dfb96--plywood-birches.jpg");
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+			background-size:  cover;
 }
 .output__registration{
     position: relative;
     animation-name: example;
     animation-duration: .5s;
     text-align: center;
-    background-color: rgba(195, 255, 160, 0.151);
     box-shadow: .05em .05em .1em .1em #00000059;
+    background-image: url("./images/80af03f7de51587aa581d1042f5dfb96--plywood-birches.jpg");
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+			background-size:  cover;
 }
 .Story{
     position: relative;
@@ -100,7 +126,6 @@ button:hover{
     text-align: center;
     padding: 10%;
     box-shadow: .05em .05em .1em .1em #00000059;
-    background-color: rgba(195, 255, 160, 0.151)
 }
 .stories{
     position: relative;
@@ -108,9 +133,13 @@ button:hover{
     animation-duration: .5s;
     text-align: center;
     padding: 1%;
-    background-color: rgba(195, 255, 160, 0.151);
     box-shadow: .05em .05em .1em .1em #00000059;
-    padding: 2%
+    padding: 2%;
+    background-image: url("./images/80af03f7de51587aa581d1042f5dfb96--plywood-birches.jpg");
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+			background-size:  cover;
 }
 input{
     position: relative;
@@ -118,9 +147,15 @@ input{
     animation-duration: .5s;
     border-radius: 25px;
     box-shadow: .05em .05em .1em .1em #0000000c;
-    background-color: #ffa0c34f;
     font-size: 1.3em;
     text-align: center;
+    background-image: url("./images/rough-beige-paper-texture.jpg");
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+			background-size:  cover;
+
+
 
 }
 input:hover{
@@ -129,7 +164,6 @@ input:hover{
     animation-duration: .5s;
     border-radius: 25px;
     box-shadow: .02em .02em .08em .08em #0000003a;
-    background-color: #ff005d4f;
     text-align: center;
 
 }
@@ -138,20 +172,23 @@ h2{
     animation-name: example;
     animation-duration: .5s;
     box-shadow: .05em .05em .1em .1em #00000059;
-    background-color: #ffa0c34f
+    background-image: url("./images/steel-499897_960_720.jpg");
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+			background-size:  cover;
 }
 h2:hover{
     position: relative;
     animation-name: example;
     animation-duration: .5s;
     box-shadow: .1em .1em .2em .2em #00000059;
-    background-color: #ff005d4f;
+
 }
 .Story2{
     position: relative;
     animation-name: example;
     animation-duration: .5s;
-    background-color: rgba(195, 255, 160, 0.151)
 }
 .Story3{
     position: relative;
@@ -159,14 +196,12 @@ h2:hover{
     animation-duration: .5s;
     padding: 2%;
     box-shadow: .05em .05em .1em .1em #00000059;
-    background-color: rgba(195, 255, 160, 0.151);
 }
 p{
     position: relative;
     animation-name: example;
     animation-duration: .5s;
     text-align: center;
-    background-color: #ffa0c34f;
     font-size: 2em;
     padding: 1em;
     box-shadow: .1em .1em .2em .2em #00000059;
@@ -200,12 +235,34 @@ h1:hover{
 }
 .Input1{
     text-align: center;
+    font-size: 1.5em;
+    width: 75%;
 }
 .Input2{
     text-align: center;
+    font-size: 1.5em;
+    width: 75%;
+
 }
 .Input3{
     text-align: center;
+    font-size: 1.5em;
+    width: 75%;
+
+}
+
+.Input4{
+    text-align: center;
+    font-size: 1.5em;
+    width: 75%;
+
+}
+
+.Input5{
+    text-align: center;
+    font-size: 1.5em;
+    width: 75%;
+
 }
 .Story4{
     display: flex;
@@ -215,6 +272,11 @@ h1:hover{
     position: relative;
     animation-name: example;
     animation-duration: .5s;
+    background-image: url("./images/80af03f7de51587aa581d1042f5dfb96--plywood-birches.jpg");
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+			background-size:  cover;
 }
 img{
     width: 33%;
@@ -222,3 +284,14 @@ img{
     padding: 2em;
 }
 
+label{
+    font-size: .8em;
+}
+
+.paragraph{
+    background-image: url("./images/steel-499897_960_720.jpg");
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+			background-size:  cover;
+}

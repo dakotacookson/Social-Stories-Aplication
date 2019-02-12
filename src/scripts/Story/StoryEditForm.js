@@ -21,8 +21,8 @@ const StoryEditForm = {
     let StoryPictureLabel2 = document.createElement("label")
     let StoryPictureLabel3 = document.createElement("label")
     StoryPictureLabel.textContent = " Picture"
-    StoryPictureLabel2.textContent = " Picture"
-    StoryPictureLabel3.textContent = " Picture"
+    StoryPictureLabel2.textContent = " Picture 2"
+    StoryPictureLabel3.textContent = " Picture 3"
     let StoryPictureInput = document.createElement("input")
     StoryPictureInput.setAttribute("Class", "Input5")
     let StoryPictureInput2 = document.createElement("input")
@@ -57,8 +57,8 @@ const StoryEditForm = {
 
     let updateButton = document.createElement("button")
     updateButton.textContent = "Update"
-    let StoryItemArticle = document.querySelector(".Story")
-
+    let StoryItemArticle = document.querySelector(".Arti1")
+    StoryItemArticle.innerHTML = " "
     StoryItemArticle.appendChild(StoryNameField)
     StoryItemArticle.appendChild(StoryPicturesField)
     StoryItemArticle.appendChild(StoryStorysField)
@@ -78,21 +78,24 @@ const StoryEditForm = {
       }
       let name = document.querySelector(".Input1")
       console.log(name.value)
-if (name.value == ""){
-alert("No Story!")
-} else { (name.value ==! "")
-  StoryEditForm.doitnow(articleId , editedStory , StoryObj)
-}
-    })},
-    doitnow(articleId, editedStory, StoryObj) {
-          API.putExistingStory(articleId, editedStory, StoryObj)
-        .then(response => {
-          document.querySelector(".Story").innerHTML = " "
-          Storylist.listStory(StoryObj);
-          document.querySelector(".Story2").innerHTML = " "
-          Storylist2.listStory2();
-          console.log(response)
-        })}
-
+      if (name.value.length == 0) {
+        alert("No Story!")
+      } else {
+        (name.value.length > 0)
+        StoryEditForm.doitnow(articleId, editedStory, StoryObj)
       }
+    })
+  },
+  doitnow(articleId, editedStory, StoryObj) {
+    API.putExistingStory(articleId, editedStory, StoryObj)
+      .then(response => {
+        document.querySelector(".Story").innerHTML = " "
+        Storylist.listStory(StoryObj);
+        document.querySelector(".Story2").innerHTML = " "
+        Storylist2.listStory2();
+        console.log(response)
+      })
+  }
+
+}
 export default StoryEditForm
