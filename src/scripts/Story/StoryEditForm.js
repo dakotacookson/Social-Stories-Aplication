@@ -1,6 +1,5 @@
 import API from "../api"
 import Storylist from "../itarator2"
-import Storylist2 from "./StoryList/listitorator"
 import StoryForm from "./StoryForm"
 const StoryEditForm = {
   createAndAppendForm(StoryObj, articleId) {
@@ -66,7 +65,6 @@ const StoryEditForm = {
     updateButton.addEventListener("click", () => {
       const userId = sessionStorage.getItem("userId");
       const currentUserId = JSON.parse(userId);
-
       let editedStory = {
         title: StoryNameInput.value,
         picture: StoryPictureInput.value,
@@ -91,8 +89,6 @@ const StoryEditForm = {
       .then(response => {
         document.querySelector(".Story").innerHTML = " "
         Storylist.listStory(StoryObj);
-        document.querySelector(".Story2").innerHTML = " "
-        Storylist2.listStory2();
         console.log(response)
       })
   }

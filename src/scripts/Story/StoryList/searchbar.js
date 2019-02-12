@@ -8,14 +8,15 @@ const serchbar = {
     searchinput.setAttribute("Id", "Searchbar")
     searchinput.placeholder = "Search";
     let searchbutton = document.createElement("button")
-    searchbutton.textContent = "Search"
     searchbutton.setAttribute("Class", "SearchButton")
+    searchbutton.textContent = "Search"
     storycontainer.append(searchinput)
     storycontainer.append(searchbutton)
     searchbutton.addEventListener("click", () => {
       document.querySelector(".Story2").innerHTML = " "
       let searchbarqueery = document.getElementById("Searchbar").value
       API.getData2(searchbarqueery)
+      //a form of validation for the fetch call so it womnt break
       if (searchbarqueery != " ") {
         searchbarqueery = " ";
         Storylist4.listStory4()

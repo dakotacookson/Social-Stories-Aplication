@@ -41,11 +41,10 @@ const Storys = {
             document.querySelector(".Arti1").style.display = "none";
             document.querySelector(".Story").innerHTML = " "
             StoryForm.StoryFormBuilder()
-
         })
         StoryOutputSection.appendChild(Back);
 
-
+//creates an edit button and adds an event listiner when cliked it runs the edit form with paramaters to pass in from the database
         const StoryEditButton = document.createElement("button");
         StoryOutputSection.appendChild(StoryEditButton);
         StoryEditButton.textContent = "Edit";
@@ -76,6 +75,8 @@ const Storys = {
                     restart.innerHTML = " "
                     document.querySelector(".Arti1").style.display = "none";
                     document.querySelector(".Story").innerHTML = " "
+                    document.querySelector(".Title0").innerHTML = " "
+                    document.querySelector(".Title0").style.display = "none";
                     StoryList.listStory();
                     StoryForm.StoryFormBuilder(StoryObj)
                     console.log(response)

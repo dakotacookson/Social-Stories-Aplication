@@ -15,7 +15,7 @@ const StoryForm = {
         const StoryFormHeader = document.createElement("h3");
         StoryFormHeader.setAttribute("Class", "StoryHeader")
         StoryFormSection.appendChild(StoryFormHeader);
-        StoryFormHeader.textContent = "Story Name";
+        StoryFormHeader.textContent = "Add Story";
         StoryFormSection.appendChild(StoryFormStoryInput);
         StoryFormStoryInput.placeholder = "Story Name";
         StoryFormStoryInput.setAttribute("Class", "Storyinput")
@@ -38,6 +38,7 @@ const StoryForm = {
         StoryFormSection.appendChild(addStoryButton);
         addStoryButton.textContent = "Add Story";
         addStoryButton.addEventListener("click", () => {
+            //rudementry form validation
             let nameipnut = document.querySelector(".Storyinput")
             if (nameipnut.value.length == 0) {
                 alert("No Story!")
@@ -71,13 +72,19 @@ const StoryForm = {
             .then(response => {
                 document.querySelector(".Story").innerHTML = " "
                 document.querySelector(".Story2").innerHTML = " "
-                Storylist2.listStory2();
                 console.log(response)
-                document.querySelector(".Storyinput").value = " "
-                document.querySelector(".Storytext").value = " "
-                document.querySelector(".Picinput1").value = " "
-                document.querySelector(".Picinput2").value = " "
-                document.querySelector(".Picinput3").value = " "
+                //cleareing and reentering placeholder values
+                document.querySelector(".Storyinput").value = "";
+                document.querySelector(".Storyinput").placeholder = "Story Name";
+                document.querySelector(".Storytext").value = "";
+                document.querySelector(".Storytext").placeholder = "Story";
+                document.querySelector(".Picinput1").value = "";
+                document.querySelector(".Picinput1").placeholder = "Picture URL";
+                document.querySelector(".Picinput2").value = "";
+                document.querySelector(".Picinput2").placeholder = "Picture URL";
+                document.querySelector(".Picinput3").value = "";
+                document.querySelector(".Picinput3").placeholder = "Picture URL";
+                Storylist2.listStory2()
             })
 
     }

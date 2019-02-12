@@ -46,7 +46,7 @@ const registrationForm = {
         const userNameValue = userNameInput.value;
         const userPasswordValue = userPasswordInput.value ;
         const userEmailValue = userEmailInput.value;
-
+//once the value is goten this function hashes it before its saved to the DB
        let passhash =  MD5(userPasswordValue + MD5(userNameValue));
 
         let newUserToSave = {

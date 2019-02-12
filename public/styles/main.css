@@ -1,152 +1,155 @@
 
     body{
     text-align: center;
-    background-image: url("./images/background-board-grain-326270.jpg");
+    background-image: url("./images/wood-2892621_1920.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 900px;
 	background-attachment: fixed;
-			background-size:  cover;
+            background-size:  cover;
+            padding: 3%
+
 }
 #Totalsyle{
+    font-family:Arial, Helvetica, sans-serif;
     display: inline-block;
     text-align: center;
-    width: 75%;
-    box-shadow: .6em .6em .3em .3em #00000094;
-
+    width: 80%;
+    box-shadow: .1em .2em .1em .2em #00000094;
+    text-align: center;
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+     background-image: url("./images/02bf1edce8b2e2ea9c3b4b5027439481.jpg");
+            padding: 1em;
 }
 .logout{
     display: flex;
     justify-content: center;
     text-align: center;
-}
-button{
     position: relative;
     animation-name: example;
-    animation-duration: .5s;
+    animation-duration: 2s;
+    width: 6em
+}
+button{
     border-radius: 3em;
-    box-shadow: .05em .05em .1em .1em #00000059;
+    box-shadow: .05em .08em .05em .08em #00000094;
     font-size: 1em;
-    background-image: url("./images/steel-499897_960_720.jpg");
+    height: 2.5em;
+    background-image: url("./images/green-watercolor-texture_23-2147510468.jpg");
     background-color: white;
     background-position: center;
     background-repeat: no-repeat;
-			background-size:  cover;
-
-}
+            background-size:  cover;
+            text-align: center;
+            position: relative;
+            animation-name: example;
+            animation-duration: 2s;
+        }
 button:hover{
-    position: relative;
-    animation-name: example;
-    animation-duration: .5s;
     border-radius: 3em;
-    box-shadow: .02em .02em .08em .08em #00000098;
+    box-shadow: .05em .08em .05em .08em #00000094;
+    text-align: center
+
 
 }
 .header1{
-    position: relative;
-    animation-name: example;
-    animation-duration: .5s;
     text-align: center;
-    box-shadow: .05em .05em .1em .1em #000000a4;
+    box-shadow: .05em .08em .05em .08em #00000094;
     background-image: url("./images/80af03f7de51587aa581d1042f5dfb96--plywood-birches.jpg");
     background-color: white;
     background-position: center;
-    background-repeat: no-repeat;
-			background-size:  cover;
-}
+            font-size: 3em;
+            background-repeat: no-repeat;
+            background-size:  cover;
+            position: relative;
+            animation-name: example;
+            animation-duration: 2s;
+        }
 
 .header123{
     display: flex;
-    box-shadow: .05em .05em .1em .1em #00000059;
-    position: relative;
-    animation-name: example;
-    animation-duration: .5s;
     justify-content: center;
     background-image: url("./images/80af03f7de51587aa581d1042f5dfb96--plywood-birches.jpg");
     background-color: white;
     background-position: center;
     background-repeat: no-repeat;
-			background-size:  cover;
+            background-size:  cover;
+            position: relative;
+            animation-name: example;
+            animation-duration: 2s;
+            box-shadow: .1em .2em .1em .2em #00000094;
 
 }
 .StoryHeader{
-    position: relative;
-    animation-name: example;
-    animation-duration: .5s;
     text-align: center;
 }
 .output__logout{
     display: flex;
-
-    position: relative;
-    animation-name: example;
-    animation-duration: .5s;
     text-align: center;
     justify-content: center;
 
     padding: 1%;
 }
 .output__login{
-    position: relative;
-    animation-name: example;
-    animation-duration: .5s;
     text-align: center;
-    box-shadow: .05em .05em .1em .1em #00000059;
+    box-shadow: .05em .08em .05em .08em #00000094;
     background-image: url("./images/80af03f7de51587aa581d1042f5dfb96--plywood-birches.jpg");
     background-color: white;
     background-position: center;
     background-repeat: no-repeat;
-			background-size:  cover;
-}
+            background-size:  cover;
+            position: relative;
+            animation-name: example;
+            animation-duration: 2s;
+        }
 .output__registration{
-    position: relative;
-    animation-name: example;
-    animation-duration: .5s;
     text-align: center;
-    box-shadow: .05em .05em .1em .1em #00000059;
+    box-shadow: .05em .08em .05em .08em #00000094;
     background-image: url("./images/80af03f7de51587aa581d1042f5dfb96--plywood-birches.jpg");
     background-color: white;
     background-position: center;
     background-repeat: no-repeat;
-			background-size:  cover;
-}
+            background-size:  cover;
+            position: relative;
+            animation-name: example;
+            animation-duration: 2s;
+        }
 .Story{
-    position: relative;
-    animation-name: example;
-    animation-duration: .5s;
     word-wrap: inherit;
     text-align: center;
-}
-.Arti1{
     position: relative;
     animation-name: example;
-    animation-duration: .5s;
+    animation-duration: 2s;
+}
+.Arti1{
     word-wrap: break-word;
     text-align: center;
     padding: 10%;
-    box-shadow: .05em .05em .1em .1em #00000059;
-}
-.stories{
     position: relative;
     animation-name: example;
-    animation-duration: .5s;
+    animation-duration: 2s;
+    background-size:  cover;
+}
+.stories{
     text-align: center;
     padding: 1%;
-    box-shadow: .05em .05em .1em .1em #00000059;
     padding: 2%;
     background-image: url("./images/80af03f7de51587aa581d1042f5dfb96--plywood-birches.jpg");
     background-color: white;
     background-position: center;
     background-repeat: no-repeat;
-			background-size:  cover;
-}
+            background-size:  cover;
+            box-shadow: .1em .2em .1em .2em #00000094;
+            position: relative;
+            animation-name: example;
+            animation-duration: 2s;
+        }
 input{
-    position: relative;
-    animation-name: example;
-    animation-duration: .5s;
     border-radius: 25px;
-    box-shadow: .05em .05em .1em .1em #0000000c;
+    box-shadow: .05em .08em .05em .08em #00000094;
     font-size: 1.3em;
     text-align: center;
     background-image: url("./images/rough-beige-paper-texture.jpg");
@@ -154,74 +157,43 @@ input{
     background-position: center;
     background-repeat: no-repeat;
 			background-size:  cover;
-
+            position: relative;
+            animation-name: example;
+            animation-duration: 2s;
 
 
 }
 input:hover{
-    position: relative;
-    animation-name: example;
-    animation-duration: .5s;
     border-radius: 25px;
-    box-shadow: .02em .02em .08em .08em #0000003a;
+    box-shadow: .05em .08em .05em .08em #00000094;
     text-align: center;
 
 }
 h2{
-    position: relative;
-    animation-name: example;
-    animation-duration: .5s;
-    box-shadow: .05em .05em .1em .1em #00000059;
-    background-image: url("./images/steel-499897_960_720.jpg");
+    box-shadow: .05em .08em .05em .08em #00000094;
+    background-image: url("./images/green-watercolor-texture_23-2147510468.jpg");
     background-color: white;
     background-position: center;
     background-repeat: no-repeat;
-			background-size:  cover;
+    background-size:  cover;
+    height: 1.3em;
+    text-align: center;
 }
 h2:hover{
-    position: relative;
-    animation-name: example;
-    animation-duration: .5s;
-    box-shadow: .1em .1em .2em .2em #00000059;
+    box-shadow: .05em .08em .05em .08em #00000094;
+}
 
-}
-.Story2{
-    position: relative;
-    animation-name: example;
-    animation-duration: .5s;
-}
-.Story3{
-    position: relative;
-    animation-name: example;
-    animation-duration: .5s;
-    padding: 2%;
-    box-shadow: .05em .05em .1em .1em #00000059;
-}
 p{
-    position: relative;
-    animation-name: example;
-    animation-duration: .5s;
     text-align: center;
     font-size: 2em;
     padding: 1em;
-    box-shadow: .1em .1em .2em .2em #00000059;
+    box-shadow: .05em .05em .1em .1em #00000094;
+    animation-name: example;
+    animation-duration: 2s;
 }
 p:hover{
-    position: relative;
-    animation-name: example;
-    animation-duration: .5s;
     padding: 1em;
-    box-shadow: .1em .1em .2em .2em #00000059;
-}
-h1{
-    position: relative;
-    animation-name: example;
-    animation-duration: .5s;
-}
-h1:hover{
-    position: relative;
-    animation-name: example;
-    animation-duration: .5s;
+    box-shadow: .05em .05em .1em .1em #00000094;
 }
 @keyframes example {
     0% {
@@ -263,35 +235,56 @@ h1:hover{
     font-size: 1.5em;
     width: 75%;
 
+
 }
 .Story4{
     display: flex;
     justify-content: space-between;
     text-align: center;
-    box-shadow: .05em .05em .1em .1em #00000059;
-    position: relative;
-    animation-name: example;
-    animation-duration: .5s;
+    box-shadow: .1em .2em .1em .2em #00000094;
     background-image: url("./images/80af03f7de51587aa581d1042f5dfb96--plywood-birches.jpg");
     background-color: white;
     background-position: center;
     background-repeat: no-repeat;
-			background-size:  cover;
-}
+            background-size:  cover;
+            position: relative;
+            animation-name: example;
+            animation-duration: 2s;
+        }
 img{
     width: 33%;
     height: 33%;
     padding: 2em;
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
 }
 
 label{
     font-size: .8em;
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+}
+
+.Title0{
+font-size: 1.5em;
+text-align: center;
+position: relative;
+animation-name: example;
+animation-duration: 2s;
+background-image: url("./images/green-watercolor-texture_23-2147510468.jpg");
+
+}
+.Story5{
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
 }
 
 .paragraph{
-    background-image: url("./images/steel-499897_960_720.jpg");
-    background-color: white;
+    background-image: url("./images/green-watercolor-texture_23-2147510468.jpg");
     background-position: center;
     background-repeat: no-repeat;
-			background-size:  cover;
+            background-size:  cover;
 }
