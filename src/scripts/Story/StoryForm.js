@@ -2,7 +2,7 @@ import API from "../api"
 import Storylist2 from "./StoryList/listitorator"
 
 const StoryFormStoryInput = document.createElement("input");
-const StoryFormStorysInput = document.createElement("input");
+const StoryFormStorysInput = document.createElement("textarea");
 const Picturesinput = document.createElement("input");
 const Picturesinput2 = document.createElement("input");
 const Picturesinput3 = document.createElement("input");
@@ -19,9 +19,6 @@ const StoryForm = {
         StoryFormSection.appendChild(StoryFormStoryInput);
         StoryFormStoryInput.placeholder = "Story Name";
         StoryFormStoryInput.setAttribute("Class", "Storyinput")
-        StoryFormSection.appendChild(StoryFormStorysInput);
-        StoryFormStorysInput.placeholder = "Story";
-        StoryFormStorysInput.setAttribute("Class", "Storytext")
         StoryFormSection.appendChild(Picturesinput);
         Picturesinput.textContent = "Add Picture";
         Picturesinput.placeholder = "Picture URL";
@@ -34,7 +31,13 @@ const StoryForm = {
         Picturesinput3.textContent = "Add Picture";
         Picturesinput3.placeholder = "Picture URL";
         Picturesinput3.setAttribute("Class", "Picinput3")
+        StoryFormSection.appendChild(StoryFormStorysInput);
+        StoryFormStorysInput.placeholder = "Story";
+        let  break1 = document.createElement("br")
+        StoryFormSection.appendChild(break1)
+        StoryFormStorysInput.setAttribute("Class", "Storytext")
         const addStoryButton = document.createElement("button");
+        addStoryButton.setAttribute("class" , "selctorbutton1")
         StoryFormSection.appendChild(addStoryButton);
         addStoryButton.textContent = "Add Story";
         addStoryButton.addEventListener("click", () => {

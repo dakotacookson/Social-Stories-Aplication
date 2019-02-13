@@ -8,9 +8,11 @@ const serchbar = {
     searchinput.setAttribute("Id", "Searchbar")
     searchinput.placeholder = "Search";
     let searchbutton = document.createElement("button")
+    let br = document.createElement("br")
     searchbutton.setAttribute("Class", "SearchButton")
     searchbutton.textContent = "Search"
     storycontainer.append(searchinput)
+    storycontainer.append(br)
     storycontainer.append(searchbutton)
     searchbutton.addEventListener("click", () => {
       document.querySelector(".Story2").innerHTML = " "

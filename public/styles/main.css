@@ -11,16 +11,39 @@
             padding: 3%
 
 }
+textarea{
+    top:10px;
+    border-radius: .5em;
+    box-shadow: .1em .2em .1em .2em #00000094;
+    font-size: 1.3em;
+    height: 50%;
+    width: 40%;
+    text-align: center;
+    background-image: url("./images/rough-beige-paper-texture.jpg");
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+			background-size:  cover;
+            position: relative;
+            animation-name: example;
+                animation-duration: 2s;
+            font-family: 'Luckiest Guy', cursive;
+}
+textarea:hover{
+
+    box-shadow: .05em .08em .05em .08em #00000094;
+
+}
 #Totalsyle{
-    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
     display: inline-block;
     text-align: center;
-    width: 80%;
-    box-shadow: .1em .2em .1em .2em #00000094;
+    width: 75%;
+    box-shadow: .3em .3em .6em .6em #00000094;
     text-align: center;
     position: relative;
     animation-name: example;
-    animation-duration: 2s;
+        animation-duration: 2s;
      background-image: url("./images/02bf1edce8b2e2ea9c3b4b5027439481.jpg");
             padding: 1em;
 }
@@ -30,15 +53,36 @@
     text-align: center;
     position: relative;
     animation-name: example;
+        animation-duration: 2s;
+    width: 6em;
+    top: 15px;
+    padding: 1%
+}
+
+.selector{
+    background-image: url("./images/gma-texture-collection-01-wood-pack-01-hero-shot.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+            background-size:  cover;
+            position: relative;
+animation-name: example;
     animation-duration: 2s;
-    width: 6em
+display: block
+}
+
+.selctorbutton1{
+    top:12.5px;
+    position: relative;
+    animation-name: example;
+        animation-duration: 2s;
 }
 button{
+    font-family: 'Abril Fatface', cursive;
     border-radius: 3em;
-    box-shadow: .05em .08em .05em .08em #00000094;
+    box-shadow: .1em .2em .1em .2em #00000094;
     font-size: 1em;
     height: 2.5em;
-    background-image: url("./images/green-watercolor-texture_23-2147510468.jpg");
+    background-image: url("./images/gma-texture-collection-01-wood-pack-01-hero-shot.jpg");
     background-color: white;
     background-position: center;
     background-repeat: no-repeat;
@@ -46,17 +90,23 @@ button{
             text-align: center;
             position: relative;
             animation-name: example;
-            animation-duration: 2s;
+                animation-duration: 2s;
         }
 button:hover{
     border-radius: 3em;
     box-shadow: .05em .08em .05em .08em #00000094;
-    text-align: center
+    text-align: center;
 
+}
+
+.header2{
+padding: 1%;
+font-family: 'Abril Fatface', cursive;
 
 }
 .header1{
     text-align: center;
+    font-family: 'Abril Fatface', cursive;
     box-shadow: .05em .08em .05em .08em #00000094;
     background-image: url("./images/80af03f7de51587aa581d1042f5dfb96--plywood-birches.jpg");
     background-color: white;
@@ -66,12 +116,12 @@ button:hover{
             background-size:  cover;
             position: relative;
             animation-name: example;
-            animation-duration: 2s;
+                animation-duration: 2s;
         }
 
 .header123{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     background-image: url("./images/80af03f7de51587aa581d1042f5dfb96--plywood-birches.jpg");
     background-color: white;
     background-position: center;
@@ -79,8 +129,9 @@ button:hover{
             background-size:  cover;
             position: relative;
             animation-name: example;
-            animation-duration: 2s;
+                animation-duration: 2s;
             box-shadow: .1em .2em .1em .2em #00000094;
+            padding: 2%;
 
 }
 .StoryHeader{
@@ -103,7 +154,8 @@ button:hover{
             background-size:  cover;
             position: relative;
             animation-name: example;
-            animation-duration: 2s;
+                animation-duration: 2s;
+            padding: 5%;
         }
 .output__registration{
     text-align: center;
@@ -115,14 +167,16 @@ button:hover{
             background-size:  cover;
             position: relative;
             animation-name: example;
-            animation-duration: 2s;
+                animation-duration: 2s;
+            padding: 5%;
+
         }
 .Story{
     word-wrap: inherit;
     text-align: center;
     position: relative;
     animation-name: example;
-    animation-duration: 2s;
+        animation-duration: 2s;
 }
 .Arti1{
     word-wrap: break-word;
@@ -130,26 +184,26 @@ button:hover{
     padding: 10%;
     position: relative;
     animation-name: example;
-    animation-duration: 2s;
-    background-size:  cover;
+        animation-duration: 2s;
+    box-shadow: -.1em -.2em .1em .2em #00000094;
+
 }
 .stories{
     text-align: center;
-    padding: 1%;
     padding: 2%;
     background-image: url("./images/80af03f7de51587aa581d1042f5dfb96--plywood-birches.jpg");
-    background-color: white;
     background-position: center;
     background-repeat: no-repeat;
             background-size:  cover;
-            box-shadow: .1em .2em .1em .2em #00000094;
             position: relative;
             animation-name: example;
-            animation-duration: 2s;
+                animation-duration: 2s;
+                padding: 5%;
+
         }
 input{
     border-radius: 25px;
-    box-shadow: .05em .08em .05em .08em #00000094;
+    box-shadow: .1em .2em .1em .2em #00000094;
     font-size: 1.3em;
     text-align: center;
     background-image: url("./images/rough-beige-paper-texture.jpg");
@@ -159,10 +213,11 @@ input{
 			background-size:  cover;
             position: relative;
             animation-name: example;
-            animation-duration: 2s;
-
-
+                animation-duration: 2s;
+            font-family: 'Luckiest Guy', cursive;
 }
+
+
 input:hover{
     border-radius: 25px;
     box-shadow: .05em .08em .05em .08em #00000094;
@@ -171,7 +226,8 @@ input:hover{
 }
 h2{
     box-shadow: .05em .08em .05em .08em #00000094;
-    background-image: url("./images/green-watercolor-texture_23-2147510468.jpg");
+    font-family: 'Luckiest Guy', cursive;
+    background-image: url("./images/gma-texture-collection-01-wood-pack-01-hero-shot.jpg");
     background-color: white;
     background-position: center;
     background-repeat: no-repeat;
@@ -185,7 +241,7 @@ h2:hover{
 
 p{
     text-align: center;
-    font-size: 2em;
+    font-size: 1.2em;
     padding: 1em;
     box-shadow: .05em .05em .1em .1em #00000094;
     animation-name: example;
@@ -207,34 +263,36 @@ p:hover{
 }
 .Input1{
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1em;
     width: 75%;
 }
 .Input2{
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1em;
     width: 75%;
 
 }
 .Input3{
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1em;
     width: 75%;
 
 }
 
 .Input4{
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1em;
     width: 75%;
 
 }
 
 .Input5{
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1em;
     width: 75%;
-
+}
+.Story3{
+    padding: 2%;
 
 }
 .Story4{
@@ -249,7 +307,8 @@ p:hover{
             background-size:  cover;
             position: relative;
             animation-name: example;
-            animation-duration: 2s;
+                animation-duration: 2s;
+            padding: 2%;
         }
 img{
     width: 33%;
@@ -257,34 +316,51 @@ img{
     padding: 2em;
     position: relative;
     animation-name: example;
-    animation-duration: 2s;
+        animation-duration: 2s;
 }
 
 label{
     font-size: .8em;
     position: relative;
     animation-name: example;
-    animation-duration: 2s;
+        animation-duration: 2s;
 }
 
 .Title0{
+    padding: 1%;
+    box-shadow: .1em .2em .1em .2em #00000094;
 font-size: 1.5em;
 text-align: center;
 position: relative;
 animation-name: example;
-animation-duration: 2s;
-background-image: url("./images/green-watercolor-texture_23-2147510468.jpg");
+    animation-duration: 2s;
+background-image: url("./images/gma-texture-collection-01-wood-pack-01-hero-shot.jpg");
 
 }
 .Story5{
     position: relative;
     animation-name: example;
-    animation-duration: 2s;
+        animation-duration: 2s;
+    padding: 2%;
 }
 
 .paragraph{
-    background-image: url("./images/green-watercolor-texture_23-2147510468.jpg");
+    background-image: url("./images/gma-texture-collection-01-wood-pack-01-hero-shot.jpg");
     background-position: center;
     background-repeat: no-repeat;
             background-size:  cover;
+            text-align: left
+}
+
+h3{
+    font-family: 'Abril Fatface', cursive;
+}
+label{
+    font-family: 'Luckiest Guy', cursive;
+font-size: 1.3em;
+width: 50%;
+}
+
+.SearchButton{
+    top: 10px;
 }
