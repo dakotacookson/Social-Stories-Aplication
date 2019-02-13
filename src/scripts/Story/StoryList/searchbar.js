@@ -18,7 +18,7 @@ const serchbar = {
       document.querySelector(".Story2").innerHTML = " "
       let searchbarqueery = document.getElementById("Searchbar").value
       API.getData2(searchbarqueery)
-      //a form of validation for the fetch call so it womnt break
+      //a form of validation for the fetch call so it Will not  break
       if (searchbarqueery != " ") {
         searchbarqueery = " ";
         Storylist4.listStory4()

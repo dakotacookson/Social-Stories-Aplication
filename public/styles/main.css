@@ -199,6 +199,8 @@ font-family: 'Abril Fatface', cursive;
             animation-name: example;
                 animation-duration: 2s;
                 padding: 5%;
+                box-shadow: .1em .2em .1em .2em #00000094;
+
 
         }
 input{
@@ -349,7 +351,8 @@ background-image: url("./images/gma-texture-collection-01-wood-pack-01-hero-shot
     background-position: center;
     background-repeat: no-repeat;
             background-size:  cover;
-            text-align: left
+            text-align: left;
+            font-size: 1.5em;
 }
 
 h3{

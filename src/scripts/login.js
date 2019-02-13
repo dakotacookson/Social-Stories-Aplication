@@ -14,7 +14,7 @@ const login = {
          // creates an h3 tag to use as the header
         const LoginHeader = document.createElement("h3")
          // adds text to the h3 tag
-        LoginHeader.textContent="Welcome"
+        LoginHeader.textContent="Welcome To P.I.P"
          // set the type of the username input field to text
         userNameInput.type = "text";
          // adds a place holder of text for the user so they can see an example of what to type in

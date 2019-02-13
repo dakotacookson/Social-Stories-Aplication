@@ -78,6 +78,7 @@ const StoryEditForm = {
       }
       let name = document.querySelector(".Input1")
       console.log(name.value)
+      //form validation using an if else statment
       if (name.value.length === 0) {
         alert("No Story!")
       } else {

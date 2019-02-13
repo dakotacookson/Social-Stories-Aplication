@@ -37,15 +37,26 @@ const registrationForm = {
         registerContainer.appendChild(createNewUser)
         registerContainer.appendChild(backbutton)
 
-
-        createNewUser.addEventListener("click", this.registerUser)
+        createNewUser.addEventListener("click", this.formvalidation)
         backbutton.addEventListener("click", this.GoBack)
     },
 
+
+    formvalidation(){
+        if (userNameInput.value.length == 0 || userPasswordInput.value.length == 0 || userEmailInput.value.length == 0 ) {
+            alert("No Story!")
+        } else {
+            (userNameInput.value.length > 0 || userPasswordInput.value.length > 0 || userEmailInput.value.length > 0 )
+            registrationForm.registerUser()
+        }
+    },
     registerUser() {
+        
         const userNameValue = userNameInput.value;
         const userPasswordValue = userPasswordInput.value ;
         const userEmailValue = userEmailInput.value;
+        
+
 //once the value is goten this function hashes it before its saved to the DB
        let passhash =  MD5(userPasswordValue + MD5(userNameValue));
 
