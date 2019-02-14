@@ -1,0 +1,388 @@
+html{
+    animation: blink 5s linear infinite;
+}
+@keyframes blink {
+    0%{
+      opacity: 1;
+    }
+    25%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+body{
+    text-align: center;
+    background-image: url("./images/wood-2892621_1920.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 900px;
+	background-attachment: fixed;
+            background-size:  cover;
+            padding: 3%
+
+}
+textarea{
+    top:10px;
+    border-radius: .5em;
+    box-shadow: .1em .2em .1em .2em #00000094;
+    font-size: 1.3em;
+    height: 50%;
+    width: 40%;
+    text-align: center;
+    background-image: url("./images/rough-beige-paper-texture.jpg");
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+			background-size:  cover;
+            position: relative;
+            animation-name: example;
+                animation-duration: 2s;
+            font-family: 'Luckiest Guy', cursive;
+}
+textarea:hover{
+
+    box-shadow: .05em .08em .05em .08em #00000094;
+
+}
+#Totalsyle{
+    font-weight:bold;
+    display: inline-block;
+    text-align: center;
+    width: 75%;
+    box-shadow: .3em .3em .6em .6em #00000094;
+    text-align: center;
+    position: relative;
+    animation-name: example;
+        animation-duration: 2s;
+     background-image: url("./images/02bf1edce8b2e2ea9c3b4b5027439481.jpg");
+            padding: 1em;
+}
+.logout{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    animation-name: example;
+        animation-duration: 2s;
+    width: 6em;
+    top: 15px;
+    padding: 1%
+}
+
+.selector{
+    background-image: url("./images/gma-texture-collection-01-wood-pack-01-hero-shot.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+            background-size:  cover;
+            position: relative;
+animation-name: example;
+    animation-duration: 2s;
+display: block
+}
+
+.selctorbutton1{
+    top:12.5px;
+    position: relative;
+    animation-name: example;
+        animation-duration: 2s;
+}
+button{
+    font-family: 'Abril Fatface', cursive;
+    border-radius: 3em;
+    box-shadow: .1em .2em .1em .2em #00000094;
+    font-size: 1em;
+    height: 2.5em;
+    background-image: url("./images/gma-texture-collection-01-wood-pack-01-hero-shot.jpg");
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+            background-size:  cover;
+            text-align: center;
+            position: relative;
+            animation-name: example;
+                animation-duration: 2s;
+        }
+button:hover{
+    border-radius: 3em;
+    box-shadow: .05em .08em .05em .08em #00000094;
+    text-align: center;
+
+}
+
+.header2{
+padding: 1%;
+font-family: 'Abril Fatface', cursive;
+
+}
+.header1{
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    box-shadow: .05em .08em .05em .08em #00000094;
+    background-image: url("./images/80af03f7de51587aa581d1042f5dfb96--plywood-birches.jpg");
+    background-color: white;
+    background-position: center;
+            font-size: 3em;
+            background-repeat: no-repeat;
+            background-size:  cover;
+            position: relative;
+            animation-name: example;
+                animation-duration: 2s;
+        }
+
+.header123{
+    display: flex;
+    justify-content: space-between;
+    background-image: url("./images/80af03f7de51587aa581d1042f5dfb96--plywood-birches.jpg");
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+            background-size:  cover;
+            position: relative;
+            animation-name: example;
+                animation-duration: 2s;
+            box-shadow: .1em .2em .1em .2em #00000094;
+            padding: 2%;
+
+}
+.StoryHeader{
+    text-align: center;
+}
+.output__logout{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+    padding: 1%;
+}
+.output__login{
+    text-align: center;
+    box-shadow: .05em .08em .05em .08em #00000094;
+    background-image: url("./images/80af03f7de51587aa581d1042f5dfb96--plywood-birches.jpg");
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+            background-size:  cover;
+            position: relative;
+            animation-name: example;
+                animation-duration: 2s;
+            padding: 5%;
+        }
+.output__registration{
+    text-align: center;
+    box-shadow: .05em .08em .05em .08em #00000094;
+    background-image: url("./images/80af03f7de51587aa581d1042f5dfb96--plywood-birches.jpg");
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+            background-size:  cover;
+            position: relative;
+            animation-name: example;
+                animation-duration: 2s;
+            padding: 5%;
+
+        }
+.Story{
+    word-wrap: inherit;
+    text-align: center;
+    position: relative;
+    animation-name: example;
+        animation-duration: 2s;
+}
+.Arti1{
+    word-wrap: break-word;
+    text-align: center;
+    padding: 10%;
+    position: relative;
+    animation-name: example;
+        animation-duration: 2s;
+    box-shadow: -.1em -.2em .1em .2em #00000094;
+
+}
+.stories{
+    text-align: center;
+    padding: 2%;
+    background-image: url("./images/80af03f7de51587aa581d1042f5dfb96--plywood-birches.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+            background-size:  cover;
+            position: relative;
+            animation-name: example;
+                animation-duration: 2s;
+                padding: 5%;
+                box-shadow: .1em .2em .1em .2em #00000094;
+
+
+        }
+input{
+    border-radius: 25px;
+    box-shadow: .1em .2em .1em .2em #00000094;
+    font-size: 1.3em;
+    text-align: center;
+    background-image: url("./images/rough-beige-paper-texture.jpg");
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+			background-size:  cover;
+            position: relative;
+            animation-name: example;
+                animation-duration: 2s;
+            font-family: 'Luckiest Guy', cursive;
+}
+
+
+input:hover{
+    border-radius: 25px;
+    box-shadow: .05em .08em .05em .08em #00000094;
+    text-align: center;
+
+}
+h2{
+    box-shadow: .05em .08em .05em .08em #00000094;
+    font-family: 'Luckiest Guy', cursive;
+    background-image: url("./images/gma-texture-collection-01-wood-pack-01-hero-shot.jpg");
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:  cover;
+    height: 1.3em;
+    text-align: center;
+}
+h2:hover{
+    box-shadow: .05em .08em .05em .08em #00000094;
+}
+
+p{
+    text-align: center;
+    font-size: 1.2em;
+    padding: 1em;
+    box-shadow: .05em .05em .1em .1em #00000094;
+    animation-name: example;
+    animation-duration: 2s;
+}
+p:hover{
+    padding: 1em;
+    box-shadow: .05em .05em .1em .1em #00000094;
+}
+@keyframes example {
+    0% {
+        Right:4000px;
+        top:0px;
+   }
+    100% {
+        Right:0px;
+        top:0px;
+   }
+}
+.Input1{
+    text-align: center;
+    font-size: 1em;
+    width: 75%;
+}
+.Input2{
+    text-align: center;
+    font-size: 1em;
+    width: 75%;
+
+}
+.Input3{
+    text-align: center;
+    font-size: 1em;
+    width: 75%;
+
+}
+
+.Input4{
+    text-align: center;
+    font-size: 1em;
+    width: 75%;
+
+}
+
+.Input5{
+    text-align: center;
+    font-size: 1em;
+    width: 75%;
+}
+.Story3{
+    padding: 2%;
+
+}
+.Story4{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: .1em .2em .1em .2em #00000094;
+    background-image: url("./images/80af03f7de51587aa581d1042f5dfb96--plywood-birches.jpg");
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+            background-size:  cover;
+            position: relative;
+            animation-name: example;
+                animation-duration: 2s;
+            padding: 2%;
+        }
+img{
+    width: 33%;
+    height: 33%;
+    padding: 2em;
+    position: relative;
+    animation-name: example;
+        animation-duration: 2s;
+}
+
+label{
+    font-size: .8em;
+    position: relative;
+    animation-name: example;
+        animation-duration: 2s;
+}
+
+.Title0{
+    padding: 1%;
+    box-shadow: .1em .2em .1em .2em #00000094;
+font-size: 1.5em;
+text-align: center;
+position: relative;
+animation-name: example;
+    animation-duration: 2s;
+background-image: url("./images/gma-texture-collection-01-wood-pack-01-hero-shot.jpg");
+
+}
+.Story5{
+    position: relative;
+    animation-name: example;
+        animation-duration: 2s;
+    padding: 2%;
+}
+
+.paragraph{
+    background-image: url("./images/gma-texture-collection-01-wood-pack-01-hero-shot.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+            background-size:  cover;
+            text-align: left;
+            font-size: 1.5em;
+}
+
+h3{
+    font-family: 'Abril Fatface', cursive;
+}
+label{
+    font-family: 'Luckiest Guy', cursive;
+font-size: 1.3em;
+width: 50%;
+}
+
+.SearchButton{
+    top: 10px;
+}

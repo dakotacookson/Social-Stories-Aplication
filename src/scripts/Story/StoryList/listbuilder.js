@@ -12,10 +12,9 @@ const StorysList3 = {
         StoryName2.addEventListener("click", () => {
             let Storiescontainer = document.querySelector(".stories")
             Storiescontainer.innerHTML = " "
-            let clearcontewnt = document.querySelector(".Story")
-            clearcontewnt.innerHTML = " "
+            let clearcontent = document.querySelector(".Story")
+            clearcontent.innerHTML = " "
             Stories.StoryBuilder(StoryObj);
-
         })
     }
 }

@@ -11,25 +11,25 @@ registrationPage.style.display = "none"; // changes the  display style of the el
 
 const login = {
     createAndAppendLoginInput() {
-         // creates an h3 tag to use as the header
+        // creates an h3 tag to use as the header
         const LoginHeader = document.createElement("h3")
-         // adds text to the h3 tag
-        LoginHeader.textContent="Welcome To P.I.P"
-         // set the type of the username input field to text
+        // adds text to the h3 tag
+        LoginHeader.textContent = "Welcome To P.I.P"
+        // set the type of the username input field to text
         userNameInput.type = "text";
-         // adds a place holder of text for the user so they can see an example of what to type in
+        // adds a place holder of text for the user so they can see an example of what to type in
         userNameInput.placeholder = "username";
         // sets the type of input to password thusly obfiscating the password from view
         passwordInput.type = "password";
-         // adds a place holder of text for the user so they can see an example of what to type in
+        // adds a place holder of text for the user so they can see an example of what to type in
         passwordInput.placeholder = "password";
         // appends item to loginpage wich is a class on the dom
         loginPage.appendChild(LoginHeader)
         // appends item to loginpage wich is a class on the dom
         loginPage.appendChild(userNameInput);
-         // appends item to loginpage wich is a class on the dom
+        // appends item to loginpage wich is a class on the dom
         loginPage.appendChild(passwordInput);
-         //creates a button for login
+        //creates a button for login
         const loginButton = document.createElement("button");
         // adds text to the button for login
         loginButton.textContent = ("login");
@@ -41,11 +41,11 @@ const login = {
         loginPage.appendChild(loginButton);
         // appends item to loginpage wich is a class on the dom
         loginPage.appendChild(registerButton);
-         //  event listiner that directly leads to a function
+        //  event listiner that directly leads to a function
         loginButton.addEventListener("click", this.getUserData);
         //  event listiner that directly leads to a function
         registerButton.addEventListener("click", this.replaceWithRegistrationForm);
-},  //function called on click event loginButton.addEventListener("click"
+    },  //function called on click event loginButton.addEventListener("click"
     getUserData() {
         // sets a variable to the value of the username input field
         const username = userNameInput.value;
@@ -55,14 +55,14 @@ const login = {
         API.getData("users")
             // once it has al the users
             .then(allUsers => {
-                 // set a variable to 1
+                // set a variable to 1
                 let usersProcessed = 1;
                 // for each user
                 allUsers.forEach(user => {
 
                     // set a variable equal to a hash of the  user name  and  password in conjuction with the MD5 function
                     let passhash = MD5(password + MD5(username));
-                         // checks if the username and password match what is in the databse
+                    // checks if the username and password match what is in the databse
                     if (username === user.userName && passhash === user.password) {
                         // if it is it sets the user id of the matching user id ionto session storage
                         sessionStorage.setItem("userId", user.id)
@@ -72,12 +72,12 @@ const login = {
                         sessionStorage.setItem("userName", user.userName)
                         //the loads the specific user page based on the user id paramater
                         loadUserSpecificPage(userId);
-                         // checks to see if the variable useres proccesed wich starts at 1 curentl equals the lentgh of the all users if it doesnt then
+                        // checks to see if the variable useres proccesed wich starts at 1 curentl equals the lentgh of the all users if it doesnt then
                     } else if (usersProcessed === allUsers.length) {
                         alert("Username/password invalid. If new user, please register.")
                         console.log(password)
                     } else {
-                     // it procededs to incrimente until one of the above 2 if else or if statments are matched
+                        // it procededs to incrimente until one of the above 2 if else or if statments are matched
                         usersProcessed++
                     };
                     function loadUserSpecificPage() {
@@ -99,7 +99,7 @@ const login = {
         registrationPage.style.display = "block";
         //grabs the  class on the dom
         const loginPage = document.querySelector(".output__login");
-         //sets the display style of the login form to none
+        //sets the display style of the login form to none
         loginPage.style.display = "none";
 
     },
@@ -113,24 +113,24 @@ const login = {
         //grabs the  class on the dom
         const registrationPage = document.querySelector(".output__registration")
 
-//sets the display style of the login form to Block
-loginPage.style.display = "block";
-//sets the display style of the reg form to None
-registrationPage.style.display = "none";
-//grabs the  class on the dom
-const Story4 = document.querySelector(".Story4")
-//grabs the  class on the dom
-const Header2 = document.querySelector(".header2")
-//grabs the  class on the dom
-const logout = document.querySelector(".output__logout")
-//grabs the  class on the dom
-document.querySelector(".stories").innerHTML = " "
-//sets the display style of the element  to None
-Story4.style.display = "none";
-//sets the display style of the element  to None
-Header2.style.display = "none";
-//sets the display style of the element  to None
- logout.style.display = "none";
+        //sets the display style of the login form to Block
+        loginPage.style.display = "block";
+        //sets the display style of the reg form to None
+        registrationPage.style.display = "none";
+        //grabs the  class on the dom
+        const Story4 = document.querySelector(".Story4")
+        //grabs the  class on the dom
+        const Header2 = document.querySelector(".header2")
+        //grabs the  class on the dom
+        const logout = document.querySelector(".output__logout")
+        //grabs the  class on the dom
+        document.querySelector(".stories").innerHTML = " "
+        //sets the display style of the element  to None
+        Story4.style.display = "none";
+        //sets the display style of the element  to None
+        Header2.style.display = "none";
+        //sets the display style of the element  to None
+        logout.style.display = "none";
     },
 
 }

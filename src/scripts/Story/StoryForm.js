@@ -33,11 +33,11 @@ const StoryForm = {
         Picturesinput3.setAttribute("Class", "Picinput3")
         StoryFormSection.appendChild(StoryFormStorysInput);
         StoryFormStorysInput.placeholder = "Story";
-        let  break1 = document.createElement("br")
+        let break1 = document.createElement("br")
         StoryFormSection.appendChild(break1)
         StoryFormStorysInput.setAttribute("Class", "Storytext")
         const addStoryButton = document.createElement("button");
-        addStoryButton.setAttribute("class" , "selctorbutton1")
+        addStoryButton.setAttribute("class", "selctorbutton1")
         StoryFormSection.appendChild(addStoryButton);
         addStoryButton.textContent = "Add Story";
         addStoryButton.addEventListener("click", () => {
