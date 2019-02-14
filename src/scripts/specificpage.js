@@ -30,7 +30,7 @@ logout2.style.display = "block";
 
 
 var egg = new Egg();
-egg.addCode("up,up,down,down,left,right,left,right,b,a", function() {
+egg.addCode("M,E,T,A,L", function() {
     jQuery('#egggif').fadeIn(500, function() {
       window.setTimeout(function() { jQuery('#egggif').hide(); }, 5000);
     });
@@ -42,13 +42,13 @@ alert("Unlocked Metal Mode")
   }).listen();
 
   var egg2 = new Egg();
-egg2.addCode("S,E,A,S,H,I,P", function() {
+egg2.addCode("S,E,A", function() {
     jQuery('#egggif2').fadeIn(500, function() {
       window.setTimeout(function() { jQuery('#egggif2').hide(); }, 5000);
     });
   })
   .addHook(function(){
-alert("Unlocked Sea Sick Mode")
+alert("Unlocked Motion Sick Mode")
 let  stylesheet = document.querySelector(".stylesheet")
 stylesheet.setAttribute("href" , "styles/maincssrotate.css")
   }).listen();
@@ -66,6 +66,17 @@ stylesheet.setAttribute("href" , "styles/maincssrotate.css")
   stylesheet.setAttribute("href" , "styles/maincsstardis.css")
 
     }).listen();
+
+    var egg4 = new Egg();
+    egg4.addCode("up,up,down,down,left,right,left,right,b,a", function() {
+      jQuery('#egggif4').fadeIn(500, function() {
+          window.setTimeout(function() { jQuery('#egggif4').hide(); }, 5000);
+        });
+      })
+      .addHook(function(){
+    alert("Code Accepted")
+    window.location = "../../styles/images/download.htm" ;
+      }).listen();
    }
 }
 export default userpage

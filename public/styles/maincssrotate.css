@@ -1,5 +1,5 @@
 html{
-    animation: loading 3s linear infinite;
+    animation: loading 1000s linear infinite;
 
 }
 @keyframes loading {
@@ -10,6 +10,15 @@ html{
    transform: rotate(360deg);
  }
 }
+
+@keyframes loading2 {
+    0% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+   }
 body{
     text-align: center;
     background-image: url("./images/wood-2892621_1920.jpg");
@@ -113,7 +122,6 @@ button:hover{
 .header2{
 padding: 1%;
 font-family: 'Abril Fatface', cursive;
-
 }
 .header1{
     text-align: center;
@@ -143,6 +151,7 @@ font-family: 'Abril Fatface', cursive;
                 animation-duration: 2s;
             box-shadow: .1em .2em .1em .2em #00000094;
             padding: 2%;
+            animation: loading2 1000s linear infinite;
 
 }
 .StoryHeader{
@@ -322,6 +331,8 @@ p:hover{
             animation-name: example;
                 animation-duration: 2s;
             padding: 2%;
+            animation: loading2 1000s linear infinite;
+
         }
 img{
     width: 33%;
