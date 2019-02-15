@@ -26,7 +26,7 @@ const API = {
         })
     },
 
-// put  fetch call passing in the paramaters Story id and story to edit wich are variables im converting the object Story to edit into a reavble json string
+    // put  fetch call passing in the paramaters Story id and story to edit wich are variables im converting the object Story to edit into a reavble json string
     putExistingStory(Storyid, StoryToEdit) {
         return fetch(`http://localhost:8088/Stories/${Storyid}`, {
             method: "PUT",

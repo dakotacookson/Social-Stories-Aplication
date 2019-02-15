@@ -4,11 +4,11 @@ const Storylist2 = {
     listStory2() {
         API.getData("Stories")
             .then(allStories => {
-                allStories.forEach(Story => {
+                allStories.forEach(StoryObj => {
                     const userId = sessionStorage.getItem("userId");
                     const currentUserId = JSON.parse(userId);
-                    if (Story.userId === currentUserId) {
-                        StorysList3.StoryListBuilder5(Story);
+                    if (StoryObj.userId === currentUserId) {
+                        StorysList3.StoryListBuilder5(StoryObj);
                     }
                 });
             })

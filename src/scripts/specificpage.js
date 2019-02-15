@@ -27,6 +27,53 @@ Header2.style.display = "block";
 logout2.innerHTML = " "
 logout.createAndAppendLogout();
 logout2.style.display = "block";
+
+// var egg = new Egg();
+// egg.addCode("M,E,T,A,L", function() {
+//     jQuery("#egggif").fadeIn(500, function() {
+//       window.setTimeout(function() { jQuery("#egggif").hide(); }, 5000);
+//     });
+//   })
+//   .addHook(function(){
+//   let  stylesheet = document.querySelector(".stylesheet")
+//   stylesheet.setAttribute("href" , "styles/Alt.CSS")
+// alert("Unlocked Metal Mode")
+//   }).listen();
+
+//   var egg2 = new Egg();
+// egg2.addCode("S,E,A", function() {
+//     jQuery("#egggif2").fadeIn(500, function() {
+//       window.setTimeout(function() { jQuery("#egggif2").hide(); }, 5000);
+//     });
+//   })
+//   .addHook(function(){
+// alert("Unlocked Motion Sick Mode")
+// let  stylesheet = document.querySelector(".stylesheet")
+// stylesheet.setAttribute("href" , "styles/maincssrotate.css")
+//   }).listen();
+
+
+//   var egg3 = new Egg();
+//   egg3.addCode("T,A,R,D,I,S", function() {
+//       jQuery("#egggif3").fadeIn(500, function() {
+//         window.setTimeout(function() { jQuery("#egggif3").hide(); }, 5000);
+//       });
+//     })
+//     .addHook(function(){
+//   alert("Im the Doctor")
+//   let  stylesheet = document.querySelector(".stylesheet")
+//   stylesheet.setAttribute("href" , "styles/maincsstardis.css")
+//     }).listen();
+
+   //  var egg4 = new Egg();
+   //  egg4.addCode("up,up,down,down,left,right,left,right,b,a", function() {
+   //    jQuery("#egggif4").fadeIn(500, function() {
+   //        window.setTimeout(function() { jQuery("#egggif4").hide(); }, 5000);
+   //      });
+   //    })
+   //    .addHook(function(){
+   //  alert("Code Accepted")
+   //    }).listen();
    }
 }
 export default userpage

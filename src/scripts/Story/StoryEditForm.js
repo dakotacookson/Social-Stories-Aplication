@@ -1,15 +1,14 @@
 import API from "../api"
-import Storylist from "../itarator2"
 import Storylist2 from "../Story/StoryList/listitorator"
 import StoryForm from "./StoryForm"
 const StoryEditForm = {
   createAndAppendForm(StoryObj, articleId) {
     let StoryNameField = document.createElement("p")
-    StoryNameField.setAttribute ("class" , "selector")
+    StoryNameField.setAttribute("class", "selector")
     let StoryStorysField = document.createElement("p")
-    StoryStorysField.setAttribute ("class" , "selector")
+    StoryStorysField.setAttribute("class", "selector")
     let StoryPicturesField = document.createElement("p")
-    StoryPicturesField.setAttribute ("class" , "selector")
+    StoryPicturesField.setAttribute("class", "selector")
     let StoryNameLabel = document.createElement("label")
     StoryNameLabel.textContent = " Title"
     let StoryNameInput = document.createElement("input")
@@ -22,7 +21,7 @@ const StoryEditForm = {
     let StoryPictureLabel = document.createElement("label")
     let StoryPictureLabel2 = document.createElement("label")
     let StoryPictureLabel3 = document.createElement("label")
-    StoryPictureLabel.textContent =  " Picture"
+    StoryPictureLabel.textContent = " Picture"
     StoryPictureLabel2.textContent = " Picture 2"
     StoryPictureLabel3.textContent = " Picture 3"
     let StoryPictureInput = document.createElement("input")
@@ -82,7 +81,6 @@ const StoryEditForm = {
       if (name.value.length === 0) {
         alert("No Story!")
       } else {
-        (name.value.length > 0)
         StoryEditForm.doitnow(articleId, editedStory, StoryObj)
       }
     })
@@ -90,11 +88,11 @@ const StoryEditForm = {
   doitnow(articleId, editedStory, StoryObj) {
     StoryForm.StoryFormBuilder()
     API.putExistingStory(articleId, editedStory, StoryObj)
-      .then(response => {
+      .then(response =>  {
+        console.log(response)
         document.querySelector(".Story").innerHTML = " "
         document.querySelector(".Story2").innerHTML = " "
         Storylist2.listStory2()
-        console.log(response)
       })
   }
 
