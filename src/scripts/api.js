@@ -1,23 +1,25 @@
+const Deploy = "https://pipaplication.herokuapp.com/"
+const local = "http://localhost:8088/"
 const API = {
-
     getData(resource) {
-        return fetch(`https://pipaplication.herokuapp.com/api/${resource}`)
+
+        return fetch(`${local}${resource}`)
             .then(response => response.json())
     },
     getData3(resource) {
-        return fetch(`https://pipaplication.herokuapp.com/api/Stories/${resource}`)
+        return fetch(`https://pipaplication.herokuapp.com/Stories/${resource}`)
             .then(response => response.json())
     },
     getData2(resource) {
-        return fetch(`https://pipaplication.herokuapp.com/api/Stories?title_like=${resource}`)
+        return fetch(`https://pipaplication.herokuapp.com/Stories?title_like=${resource}`)
             .then(response => response.json())
     },
     getPayloadData(resource, payload) {
-        return fetch(`https://pipaplication.herokuapp.com/api/${resource}/${payload}`)
+        return fetch(`https://pipaplication.herokuapp.com/${resource}/${payload}`)
             .then(response => response.json())
     },
     postNewData(resource, payload) {
-        return fetch(`https://pipaplication.herokuapp.com/api/${resource}`, {
+        return fetch(`https://pipaplication.herokuapp.com/${resource}`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -26,7 +28,7 @@ const API = {
         })
     },
     putExistingStory(Storyid, StoryToEdit) {
-        return fetch(`https://pipaplication.herokuapp.com/api/Stories/${Storyid}`, {
+        return fetch(`https://pipaplication.herokuapp.com/Stories/${Storyid}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json"
@@ -35,7 +37,7 @@ const API = {
         })
     },
     deleteData(resource) {
-        return fetch(`https://pipaplication.herokuapp.com/api/Stories/${resource}`, {
+        return fetch(`https://pipaplication.herokuapp.com/Stories/${resource}`, {
             method: "DELETE",
             headers: {
                 "Content-Type": "application/json"
