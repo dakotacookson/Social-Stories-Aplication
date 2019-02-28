@@ -1,23 +1,23 @@
 const API = {
 
     getData(resource) {
-        return fetch(`https://pipsocial.herokuapp.com/api/database.json${resource}`)
+        return fetch(`https://pipaplication.herokuapp.com/api/database.json/${resource}`)
             .then(response => response.json())
     },
     getData3(resource) {
-        return fetch(`https://pipsocial.herokuapp.com/api/database.jsonStories/${resource}`)
+        return fetch(`https://pipaplication.herokuapp.com/api/database.json/Stories/${resource}`)
             .then(response => response.json())
     },
     getData2(resource) {
-        return fetch(`https://pipsocial.herokuapp.com/api/database.jsonStories?title_like=${resource}`)
+        return fetch(`https://pipaplication.herokuapp.com/api/database.json/Stories?title_like=${resource}`)
             .then(response => response.json())
     },
     getPayloadData(resource, payload) {
-        return fetch(`https://pipsocial.herokuapp.com/api/database.json${resource}/${payload}`)
+        return fetch(`https://pipaplication.herokuapp.com/api/database.json/${resource}/${payload}`)
             .then(response => response.json())
     },
     postNewData(resource, payload) {
-        return fetch(`https://pipsocial.herokuapp.com/api/database.json${resource}`, {
+        return fetch(`https://pipaplication.herokuapp.com/api/database.json/${resource}`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -26,7 +26,7 @@ const API = {
         })
     },
     putExistingStory(Storyid, StoryToEdit) {
-        return fetch(`https://pipsocial.herokuapp.com/api/database.jsonStories/${Storyid}`, {
+        return fetch(`https://pipaplication.herokuapp.com/api/database.json/Stories/${Storyid}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json"
@@ -35,7 +35,7 @@ const API = {
         })
     },
     deleteData(resource) {
-        return fetch(`https://pipsocial.herokuapp.com/api/database.jsonStories/${resource}`, {
+        return fetch(`https://pipaplication.herokuapp.com/api/database.json/Stories/${resource}`, {
             method: "DELETE",
             headers: {
                 "Content-Type": "application/json"
