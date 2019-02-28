@@ -8,11 +8,11 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "@babel/core": "^7.1.2",
-    "@babel/preset-env": "^7.1.0",
-    "babelify": "^10.0.0",
-    "browserify": "^16.2.3",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^3.0.4",
+    "heroku": "^7.22.2",
+    "json-server": "^0.12.1",
     "grunt": "^1.0.3",
     "grunt-bg-shell": "^2.3.3",
     "grunt-browserify": "^5.3.0",
@@ -20,11 +20,10 @@
     "grunt-eslint": "^21.0.0",
     "grunt-http-server": "^2.1.0",
     "load-grunt-config": "^0.19.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "babelify": "^10.0.0",
+    "browserify": "^16.2.3",
     "nss-domcomponent": "^0.1.0"
-  },
-  "description": "",
-  "dependencies": {
-    "bcrypt": "^3.0.4",
-    "json-server": "^0.12.1"
   }
 }
