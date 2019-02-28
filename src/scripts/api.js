@@ -25,8 +25,6 @@ const API = {
             body: JSON.stringify(payload)
         })
     },
-
-    // put  fetch call passing in the paramaters Story id and story to edit wich are variables im converting the object Story to edit into a reavble json string
     putExistingStory(Storyid, StoryToEdit) {
         return fetch(`https://pipsocial.herokuapp.com/api/database.jsonStories/${Storyid}`, {
             method: "PUT",
