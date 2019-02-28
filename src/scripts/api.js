@@ -1,4 +1,4 @@
-const Deploy = "${Deploy}"
+const Deploy = "https://pip-aplication.herokuapp.com/"
 // const local = "http://localhost:8088/"
 const API = {
     getData(resource) {
