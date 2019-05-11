@@ -1,0 +1,51 @@
+{
+  "users": [
+    {
+      "userName": "NullWalker",
+      "password": "da229fe90bf52d07fec8de98abfa902d",
+      "email": "zazitheangel1@gmail.com",
+      "id": 1
+    },
+    {
+      "userName": "a",
+      "password": "d73a719bfea66ee05cba5e2d87f26d8a",
+      "email": "a",
+      "id": 2
+    },
+    {
+      "userName": "a",
+      "password": "e35bce2719cee48819fe422c51bec259",
+      "email": "a",
+      "id": 3
+    }
+  ],
+  "Stories": [
+    {
+      "title": "Personal Space",
+      "picture": "styles/images/personal-space.jpg",
+      "picture2": "styles/images/WEBMaintaining-Your-Personal-Space-101.jpg",
+      "picture3": "styles/images/personal-space-web-20-1-638.jpg",
+      "Text": "Personal Space is the area around our bodies that makes us feel comfortable. When we are around other people, we need to make sure to leave enough space around that person's body. If we hold out our arm, this is usually the space others need to feel comfortable. People like it and feel safe around us when we leave enough personal space.",
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "title": "Posting Online",
+      "picture": "styles/images/postingyourv.jpg",
+      "picture2": "styles/images/children-internet-practices-post-image-300x300.jpg",
+      "picture3": "",
+      "Text": "When we post online we only post appropriate information , this means we do not post personal information like our address, where we go to school, our phone number or images of us, once online that information is public and permanent, we stay safe and secure when we think before we post",
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "title": "Personal Hygiene",
+      "picture": "",
+      "picture2": "",
+      "picture3": "styles/images/mu5dvwh.jpg",
+      "Text": "Good Hygiene means we are clean and smell clean before we come to school , we should make sure to do Hygiene, shower put on deodorant brush your teeth wash your hands wear clean clothes ect.",
+      "userId": 1,
+      "id": 5
+    }
+  ]
+}
